@@ -14,7 +14,7 @@
       video_url: "Dirty Dancing.mp4",
       image_url: "Dirty Dancing.jpg",
       title: "Dirty Dancing",
-      genre: "Dance movies",
+      genre: "salsa",
       year: "1987",
       description: "I had the time of my life",
       favorites: {
