@@ -9,6 +9,11 @@ Browse Feature
 Homepage Populates all Videos
 Production README
 
+api-endpoints.md
+component-hierarchy.md
+sample-state.md
+schema.md
+
 Implementation Timeline
 
 Phase 1: Backend setup and Front End User Authentication (2 days)
