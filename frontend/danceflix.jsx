@@ -1,4 +1,4 @@
-// frontend/bench_bnb.jsx
+
 
 import React from 'react';
 import ReactDOM from 'react-dom';
