@@ -65,4 +65,4 @@ Path	                      | Component
 "/watch/:videoId"	          | "VideoContainer"
 "/favorites"                | "FavoritesContainer"
 "/views/:videoId"           | "ViewsContainer"
-"/playlists/"               | "PlaylistsContainer"
+"/playlists"                | "PlaylistsContainer"
