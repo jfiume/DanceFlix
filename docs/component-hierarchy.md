@@ -40,17 +40,29 @@ VideoContainer
 
 Video
 
+playlistsContainer
+
+playlists
+
+
 FavoritesContainer
 
 Favorites
 
+ViewsContainer
+
+Views
+
 ___________________________________________________
-Path	                    | Component
-"welcome/"	              | "WelcomeContainer"
-"welcome/sign-up"	        | "AuthFormContainer"
-"welcome/sign-in"	        | "AuthFormContainer"
-"/member/:memberId"	      |"MemberContainer"
-"/browse"	                | "BrowseContainer"
-"/browse/genre/:genreId"	| "GenreContainer"
-"/search"	                | "SearchResultsContainer"
-"/watch/:videoId"	        | "VideoContainer"
+Path	                      | Component
+"welcome/"	                | "WelcomeContainer"
+"welcome/sign-up"	          | "AuthFormContainer"
+"welcome/sign-in"	          | "AuthFormContainer"
+"/member/:memberId"	        | "MemberContainer"
+"/browse"	                  | "BrowseContainer"
+"/browse/genre/:genreId"	  | "GenreContainer"
+"/search"	                  | "SearchResultsContainer"
+"/watch/:videoId"	          | "VideoContainer"
+"/watch/favorites/:videoId" | "FavoritesContainer"
+"/views/:videoId"           | "ViewsContainer"
+"/watch/playlists/"         | "playlistsContainer"

@@ -21,4 +21,13 @@ DELETE /api/session
 Videos
 
 GET /api/videos/:id
-GET /api/videos/:id/favorites
+
+Favorites
+
+GET /api/favorites
+POST /api/favorites
+DELETE /api/favorites/:id
+
+Views
+
+POST /api/views/:id

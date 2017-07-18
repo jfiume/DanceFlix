@@ -34,3 +34,11 @@ column name	| data type	| details
 id	        | integer	  | not null, primary key
 user_id	    | integer	  | not null, foreign key (references users), indexed, unique[video_id]
 video_id	  | integer	  | not null, foreign key (references videos), indexed
+
+views
+
+column name	| data type	| details
+id	        | integer	  | not null, primary key
+count       | integer   | not null
+user_id	    | integer	  | not null, foreign key (references users), indexed, unique[video_id]
+video_id	  | integer	  | not null, foreign key (references videos), indexed
