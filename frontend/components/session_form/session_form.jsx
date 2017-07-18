@@ -49,6 +49,13 @@ class SessionForm extends React.Component {
     );
   }
 
+  renderSubmit() {
+    if (this.props.formType === "signup") {
+      return "Sign Up!";
+    } else {
+      return "Sign In";
+    }
+  }
 
   render () {
     return (
@@ -58,7 +65,7 @@ class SessionForm extends React.Component {
           {this.renderErrors()}
           <div className="login-form">
             <br/>
-            <label>Username:
+            <label>Email:
               <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
@@ -74,7 +81,7 @@ class SessionForm extends React.Component {
               />
             </label>
             <br/>
-            <input type="submit" value="Submit" />
+            <input type="submit" value={this.renderSubmit()} />
           </div>
         </form>
       </div>

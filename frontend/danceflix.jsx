@@ -7,7 +7,14 @@ import * as APIUtil from './util/session_api_util';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
-  const store = configreStore();
+  let store;
+  if (window.currentUser) {
+    const preloadedState = { session : { currentUser: window.currentUser } };
+    store = configreStore(preloadedState);
+    delete window.currentUser;
+  } else {
+    store = configreStore();
+  }
 
   // testing
   window.getState = store.getState;
