@@ -26,7 +26,7 @@
         }
       }
       favorites: {
-        3: {
+        7: {
           id: 3,
           userId: 3,
           videoId: 1

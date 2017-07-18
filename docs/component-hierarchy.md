@@ -40,7 +40,7 @@ VideoContainer
 
 Video
 
-playlistsContainer
+PlaylistsContainer
 
 playlists
 
@@ -63,6 +63,6 @@ Path	                      | Component
 "/browse/genre/:genreId"	  | "GenreContainer"
 "/search"	                  | "SearchResultsContainer"
 "/watch/:videoId"	          | "VideoContainer"
-"/watch/favorites/:videoId" | "FavoritesContainer"
+"/favorites"                | "FavoritesContainer"
 "/views/:videoId"           | "ViewsContainer"
-"/watch/playlists/"         | "playlistsContainer"
+"/playlists/"               | "PlaylistsContainer"
