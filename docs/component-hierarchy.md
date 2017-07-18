@@ -40,6 +40,10 @@ VideoContainer
 
 Video
 
+FavoritesContainer
+
+Favorites
+
 ___________________________________________________
 Path	                    | Component
 "welcome/"	              | "WelcomeContainer"
