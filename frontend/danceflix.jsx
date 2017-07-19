@@ -6,6 +6,7 @@ import configureStore from './store/store';
 import * as APIUtil from './util/session_api_util';
 
 document.addEventListener('DOMContentLoaded', () => {
+  console.log("document loaded");
   const root = document.getElementById('root');
   let store;
   if (window.currentUser) {
