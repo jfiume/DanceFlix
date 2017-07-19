@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 
 const sessionLinks = () => (
   <nav className="login-signup">
-    <Link id="login" to="/login">Sign In</Link>
+    <Link className="login" to="/login">Demo Login</Link>
+    <Link className="login" to="/login">Sign In</Link>
     <div>
       <h3>See what’s next.</h3>
       <h4>WATCH ANYWHERE. CANCEL ANYTIME.</h4>
-      <Link id="signup" to="/signup">JOIN FREE FOR A MONTH</Link>
+      <Link className="signup" to="/signup">JOIN FREE FOR A MONTH</Link>
     </div>
   </nav>
 );

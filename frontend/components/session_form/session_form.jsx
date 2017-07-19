@@ -9,6 +9,7 @@ class SessionForm extends React.Component {
       password: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemo = this.handleDemo.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -27,6 +28,25 @@ class SessionForm extends React.Component {
     e.preventDefault();
     const user = this.state;
     this.props.processForm({user});
+  }
+
+  handleDemo(e) {
+    e.preventDefault();
+    const user = {
+      username: "Binky@Cats.com",
+      password: "password"
+    };
+    this.props.processForm({user});
+  }
+
+  demoLogin() {
+    if (this.props.formType === "login") {
+      return (
+        <form onSubmit={this.handleDemo} className="demo-login">
+          <input type="submit" value="Demo Login"></input>
+        </form>
+      );
+    }
   }
 
   navLink() {
@@ -61,33 +81,34 @@ class SessionForm extends React.Component {
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          <h3>Sign In</h3>
+          <div>{this.demoLogin()}</div>
+          <div id="sign-in">{this.renderSubmit()}</div>
           <div className="login-form">
             <br/>
             <label>Email <br/>
-              <input type="text"
-                value={this.state.username}
-                onChange={this.update('username')}
-                className="login-input"
+            <input type="text"
+              value={this.state.username}
+              onChange={this.update('username')}
+              className="login-input"
               />
-            </label>
-            <br/>
-            <label>Password <br/>
-              <input type="password"
-                value={this.state.password}
-                onChange={this.update('password')}
-                className="login-input"
-              />
-            </label>
-            {this.renderErrors()}
-            <input type="submit" value={this.renderSubmit()} />
-            <br/>
-            {this.navLink()}
-          </div>
-        </form>
+          </label>
+          <br/>
+          <label>Password <br/>
+          <input type="password"
+            value={this.state.password}
+            onChange={this.update('password')}
+            className="login-input"
+            />
+        </label>
+        {this.renderErrors()}
+        <input type="submit" value={this.renderSubmit()} />
+        <br/>
+        {this.navLink()}
       </div>
-    );
-  }
+    </form>
+  </div>
+);
+}
 }
 
 export default withRouter(SessionForm);

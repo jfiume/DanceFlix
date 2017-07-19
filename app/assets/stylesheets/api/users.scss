@@ -22,7 +22,7 @@ body {
   margin-left: 2%;
 }
 
-#login {
+.login {
   color: white;
   background-color: red;
   position: absolute;
@@ -39,7 +39,11 @@ body {
   border-left: 1px solid #CCCCCC;
 }
 
-#signup {
+.login:first-child {
+  margin-right: 65px;
+}
+
+.signup {
   color: white;
   background-color: red;
   position: relative;
@@ -70,4 +74,8 @@ body {
 
 .login-signup div {
   margin-top: 10%;
+}
+
+.header-name {
+  color: white;
 }
