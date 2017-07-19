@@ -11,9 +11,6 @@
     "node": "6.10.1",
     "npm": "3.10.10"
   },
-  "scripts": {
-    "postinstall": "webpack"
-  },
   "dependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
@@ -31,7 +28,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
