@@ -12,7 +12,7 @@ import {
 const App = () => (
   <div>
     <header>
-      <h1>DanceFlix</h1>
+      <h1>DANCEFLIX</h1>
       <GreetingContainer />
     </header>
 
