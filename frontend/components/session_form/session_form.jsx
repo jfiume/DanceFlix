@@ -33,7 +33,7 @@ class SessionForm extends React.Component {
   handleDemo(e) {
     e.preventDefault();
     const user = {
-      username: "Binky@Cats.com",
+      username: "WillDavis@willdemos.com",
       password: "password"
     };
     this.props.processForm({user});
@@ -53,7 +53,7 @@ class SessionForm extends React.Component {
     if (this.props.formType === 'login') {
       return (<div className="navLink">New to DanceFlix? <Link to="/signup">Sign up now</Link></div>);
     } else {
-      return (<div className="navLink">Already Have an Account? <Link to="/login">Please Login</Link></div>);
+      return (<div className="navLink">Already Have an Account? <br/> Or want to view a Demo? <Link to="/login">Please Login</Link></div>);
     }
   }
 
