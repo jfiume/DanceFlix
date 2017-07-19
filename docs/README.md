@@ -3,7 +3,8 @@ Danceflix
 Minimum Viable Product
 Hosting on Heroku
 New account creation, login, and guest/demo login
-Drop Down Navigation Bar
+Views Counter, can search by viewed Movies
+My Favorites
 My List Page
 Browse Feature
 Homepage Populates all Videos
@@ -28,9 +29,9 @@ Phase 3: Home Page (2 days)
 
 Objective: The home page will display all videos in the database through the API.
 
-Phase 4: Navigation Bar (1 day)
+Phase 4: Favorites & Views (2 day)
 
-Objective: The navigation bar will be a drop down menu that routes to other pages.
+Objective: Movies can be favorited and views will be counted.
 
 Phase 5: Allow Complex Styling in Home Page (1 day )
 
@@ -42,5 +43,7 @@ Objective: Add a search-bar feature to search for videos by name
 
 Bonus Features (TBD)
 Tests
+Drop Down Nav Bar
+Footer Nav
 Custom video controls
 Multiple sessions
