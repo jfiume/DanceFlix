@@ -1,3 +1,68 @@
 // Place all the styles related to the api::users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: black;
+  font-family: 'Hind', sans-serif;
+}
+
+.login-signup {
+  color: white;
+  position: relative;
+  right: 0%;
+  top: 0%;
+  margin: 10px;
+  padding: 5px;
+}
+
+#logo {
+  text-decoration: none;
+  color: red;
+}
+
+#login {
+  color: white;
+  background-color: red;
+  position: absolute;
+  top: -55%;
+  right: 2%;
+  margin: 15px 1px 3px 1px;
+  font-weight: lighter;
+  border-radius: 10%;
+  text-decoration: none;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+#signup {
+  color: white;
+  background-color: red;
+  position: relative;
+  top: 50%;
+  left: 3%;
+  margin: 5px 1px 5px -10px;
+  font-weight: lighter;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+.login-signup h3 {
+  font-size: 3em;
+  font-weight: 600;
+  margin: 5px 1px -12px 1px;
+  padding: 10px;
+}
+
+.login-signup h4 {
+  font-size: 1.2em;
+  margin: 1px 1px 10px 1px;
+  padding: 10px;
+}

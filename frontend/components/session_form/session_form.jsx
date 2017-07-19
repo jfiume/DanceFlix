@@ -31,9 +31,9 @@ class SessionForm extends React.Component {
 
   navLink() {
     if (this.props.formType === 'login') {
-      return <Link to="/signup">sign up</Link>;
+      return (<div className="navLink">New to DanceFlix? <Link to="/signup">Sign up now</Link></div>);
     } else {
-      return <Link to="/login">login</Link>;
+      return (<div className="navLink">Already Have an Account? <Link to="/login">Please Login</Link></div>);
     }
   }
 
@@ -61,11 +61,10 @@ class SessionForm extends React.Component {
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          Please {this.props.formType} or {this.navLink()}
-          {this.renderErrors()}
+          <h3>Sign In</h3>
           <div className="login-form">
             <br/>
-            <label>Email:
+            <label>Email <br/>
               <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
@@ -73,15 +72,17 @@ class SessionForm extends React.Component {
               />
             </label>
             <br/>
-            <label>Password:
+            <label>Password <br/>
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
                 className="login-input"
               />
             </label>
-            <br/>
+            {this.renderErrors()}
             <input type="submit" value={this.renderSubmit()} />
+            <br/>
+            {this.navLink()}
           </div>
         </form>
       </div>

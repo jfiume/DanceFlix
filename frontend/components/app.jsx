@@ -12,12 +12,13 @@ import {
 const App = () => (
   <div>
     <header>
-      <h1>DANCEFLIX</h1>
-      <GreetingContainer />
+      <h1><a id="logo" href="/">DANCEFLIX</a></h1>
     </header>
-
-    <Route path="/login" component={SessionFormContainer} />
-    <Route path="/signup" component={SessionFormContainer} />
+    <Switch>
+      <Route path="/login" component={SessionFormContainer} />
+      <Route path="/signup" component={SessionFormContainer} />
+      <Route component={GreetingContainer} />
+    </Switch>
   </div>
 );
 
