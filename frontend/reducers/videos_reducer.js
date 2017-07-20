@@ -7,14 +7,12 @@ import {
 
 const VideosReducer = (state = {}, action) => {
   Object.freeze(state);
-  let newState = merge({}, state);
-
   switch (action.type) {
     case RECEIVE_VIDEOS:
-      return action.videos;
+      return merge({}, state, action.videos);
     case RECEIVE_VIDEO:
-    const newVideo = {[action.video.id]: action.video};
-    return merge({}, state, newVideo);
+      const newVideo = {[action.video.id]: action.video};
+      return merge({}, state, newVideo);
     default:
       return state;
   }

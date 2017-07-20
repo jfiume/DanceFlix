@@ -9,7 +9,7 @@
       password_errors: []
     }
   }
-  video: {
+  videos: {
     1: {
       video_url: "Dirty Dancing.mp4",
       image_url: "Dirty Dancing.jpg",
