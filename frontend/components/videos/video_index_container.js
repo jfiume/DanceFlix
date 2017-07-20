@@ -6,10 +6,10 @@ import {
 } from '../../actions/video_actions';
 
 
-const mapStateToProps = (state) => {
-  return {
-    videos: receiveVideos(state)
-  };
+const mapStateToProps = ({videos}) => {
+  return (
+    receiveVideos(videos)
+  );
 };
 
 const mapDispatchToProps = dispatch => {
