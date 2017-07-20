@@ -1,3 +1,33 @@
 // Place all the styles related to the Api::video controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.video-index-item {
+  margin: 10px;
+}
+
+.video-index-item:hover {
+  transform:scale(1.5, 1.5);
+  .attributes {
+    visibility: visible;
+    position: relative;
+  }
+}
+
+.attributes {
+  visibility: hidden;
+}
+.attributes p {
+  font-size: .5em;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}

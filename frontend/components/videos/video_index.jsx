@@ -13,12 +13,10 @@ class VideoIndex extends Component {
 
   render() {
     if (Object.keys(this.props.videos).length > 0) {
-      console.log(this.props.videos);
       const { videos } = this.props;
-      // console.log(Object.values(videos));
       return (
-        <section className="videos">
-          <ul>
+        <section className="all-videos">
+          <ul className="videos">
             {Object.values(videos).map(vid => <VideoIndexItem key={vid.id} video={vid} />)}
           </ul>
         </section>
