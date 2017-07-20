@@ -16,9 +16,8 @@ const sessionLinks = () => (
 
 const personalGreeting = (currentUser, logout) => (
   <hgroup className="header-group">
+    <Link className="logout-button" to="/" onClick={logout}>Log Out</Link>
     <h2 className="header-name">Hi, {currentUser.username}!</h2>
-    <img src='http://res.cloudinary.com/pancake/image/upload/c_scale,h_600/v1500586087/Strictly-Ballroom_unr1re.png'></img>
-    <button className="header-button" onClick={logout}>Log Out</button>
   </hgroup>
 );
 

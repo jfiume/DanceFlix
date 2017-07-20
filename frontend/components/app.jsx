@@ -14,6 +14,7 @@ const App = () => (
   <div>
     <header>
       <h1><a id="logo" href="/">DANCEFLIX</a></h1>
+      <Route path="/videos" component={GreetingContainer} />
     </header>
     <Switch>
       <Route path="/login" component={SessionFormContainer} />
