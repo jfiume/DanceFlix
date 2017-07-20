@@ -8,3 +8,12 @@
 
 User.destroy_all
 demo_user = User.create!(username: "WillDavis@willdemos.net", password: "password")
+
+video1 = Video.create(
+  video_url: "https://www.youtube.com/embed/dk-nWE9yeG8",
+  image_url: "http://www.hypebot.com/.a/6a00d83451b36c69e201b8d207777b970c-600wi",
+  description: "The final paso doble from Strictly Ballroom",
+  title: "Paso Doble",
+  genre: "Paso Doble",
+  year: 1993
+)

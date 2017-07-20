@@ -11,7 +11,6 @@ Users
 
 GET /api/member/:id
 POST /api/member/
-EDIT /api/member/:id/edit
 
 Session
 
@@ -20,6 +19,7 @@ DELETE /api/session
 
 Videos
 
+GET /api/videos/
 GET /api/videos/:id
 
 Favorites
