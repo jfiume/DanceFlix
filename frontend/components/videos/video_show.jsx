@@ -11,17 +11,19 @@ class VideoShow extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.match.params.videoId !== nextProps.match.params.videoId) {
-      this.props.fetchVideo(nextProps.props.match.params.videoId);
+    if (nextProps.match.params.id !== this.props.match.params.id) {
+      this.props.fetchVideo(nextProps.match.params.id);
     }
   }
 
   render() {
-    if (this.props.videoId) {
+    console.log("id " + parseInt(this.props.match.params.id));
+    console.log("videoId " + this.props.videoId);
+    if (this.props.videoId === parseInt(this.props.match.params.id)) {
+      console.log("videoObject " + this.props.currentVideo.video);
       const video = this.props.currentVideo.video;
-      console.log(video.video_url);
       return (
-        <iframe className="current-video" height="500" width="500" src={video.video_url} frameborder="0" allowFullScreen></iframe>
+        <iframe className="current-video" height="500" width="500" src={video.video_url} frameBorder="0" allowFullScreen></iframe>
       );
     } else {
       return (
