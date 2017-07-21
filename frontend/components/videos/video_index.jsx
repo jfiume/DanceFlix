@@ -14,6 +14,7 @@ class VideoIndex extends Component {
   render() {
     if (Object.keys(this.props.videos).length > 0) {
       const { videos } = this.props;
+      
       return (
         <section className="all-videos">
           <ul className="videos">

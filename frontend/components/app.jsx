@@ -2,6 +2,7 @@ import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
 import SessionFormContainer from './session_form/session_form_container';
 import VideoIndexContainer from './videos/video_index_container';
+import VideoShowContainer from './videos/video_show_container';
 import {
   Route,
   Redirect,
@@ -20,6 +21,7 @@ const App = () => (
       <Route path="/login" component={SessionFormContainer} />
       <Route path="/signup" component={SessionFormContainer} />
       <Route exact path="/videos" component={VideoIndexContainer} />
+      <Route path="/videos/:id" component={VideoShowContainer} />
       <Route component={GreetingContainer} />
     </Switch>
   </div>
