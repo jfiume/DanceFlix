@@ -6,10 +6,9 @@ import {
 } from '../../actions/video_actions';
 
 const mapStateToProps = ({ videos }) => {
-  const videoId = videos.id;
-  const video = receiveVideo(videos[videoId]);
+  const videoId = parseInt(Object.keys(videos));
   return {
-    video,
+    currentVideo: receiveVideo(videos[videoId]),
     videoId
   };
 };

@@ -7,7 +7,7 @@ class VideoShow extends Component {
   }
 
   componentDidMount() {
-    this.props.fetchVideo(this.props.match.params.videoId);
+    this.props.fetchVideo(this.props.match.params.id);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -17,16 +17,11 @@ class VideoShow extends Component {
   }
 
   render() {
-    console.log(this.props);
     if (this.props.videoId) {
-
+      const video = this.props.currentVideo.video;
+      console.log(video.video_url);
       return (
-        <div>this works</div>
-      //   <figure>
-      //     <video controls>
-      //       <source src={video.video_url}></source>
-      //     </video>
-      //   </figure>
+        <iframe className="current-video" height="500" width="500" src={video.video_url} frameborder="0" allowFullScreen></iframe>
       );
     } else {
       return (

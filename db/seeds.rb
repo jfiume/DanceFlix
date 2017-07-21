@@ -11,7 +11,7 @@ demo_user = User.create!(username: "WillDavis@willdemos.net", password: "passwor
 
 Video.destroy_all
 video1 = Video.create(
-  video_url: "https://www.youtube.com/embed/dk-nWE9yeG8",
+  video_url: 'https://www.youtube.com/embed/dk-nWE9yeG8',
   image_url: "http://res.cloudinary.com/pancake/image/upload/c_thumb,h_240,w_180/v1500586087/Strictly-Ballroom_unr1re.png",
   description: "The final paso doble from Strictly Ballroom",
   title: "Paso Doble",
