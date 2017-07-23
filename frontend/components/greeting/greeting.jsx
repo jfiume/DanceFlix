@@ -13,12 +13,19 @@ const sessionLinks = () => (
   </nav>
 );
 
-const personalGreeting = (currentUser, logout) => (
-  <hgroup className="header-group">
-    <Link className="logout-button" to="/" onClick={logout}>Log Out</Link>
-    <h2 className="header-name">Hi, {currentUser.username}!</h2>
-  </hgroup>
-);
+const personalGreeting = (currentUser, logout) => {
+  const name = currentUser.username.slice(0, currentUser.username.indexOf("@"));
+  return (
+    <hgroup className="dropdown">{name}
+      <nav className="dropdown-content">
+        <h6 className="header-name">{name}</h6>
+        <h6 className="header-name">Favorites</h6>
+        <h6 className="header-name">Most Viewed</h6>
+        <Link className="logout" to="/" onClick={logout}>Sign out of DanceFlix</Link>
+      </nav>
+    </hgroup>
+  );
+};
 
 const Greeting = ({ currentUser, logout }) => (
   currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
