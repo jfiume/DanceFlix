@@ -19,7 +19,6 @@
       description: "I had the time of my life",
       views: {
         4: {
-          id: 6,
           count: 10,
           userId: 3,
           videoId: 1
@@ -27,14 +26,12 @@
       }
       favorites: {
         7: {
-          id: 3,
           userId: 3,
           videoId: 1
         }
       }
       playlists: {
         3: {
-          id: 3,
           userId: 3,
           videoId: 1
         }
