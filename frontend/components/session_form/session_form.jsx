@@ -36,8 +36,9 @@ class SessionForm extends React.Component {
       username: "WillDavis@willdemos.net",
       password: "password"
     };
-    this.props.processForm({user});
-    return (<Redirect to="/videos" />);
+    this.props.processForm({user}).then(() => {
+      this.prop.history.push("/videos");
+    });
   }
 
   demoLogin() {
