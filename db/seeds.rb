@@ -27,3 +27,12 @@ video2 = Video.create(
   genre: "West Cost Swing",
   year: 2012
 )
+
+video3 =Video.create(
+video_url: "https://www.youtube.com/embed/Cj3AV92fJ90",
+image_url: "http://res.cloudinary.com/pancake/image/upload/c_thumb,h_240,w_180/v1500863213/maxresdefault_vcfbc3.jpg",
+description: "JABBAWOCKEEZ perform at the 2017 NBA Finals Championship Game halftime show",
+title: "JABBAWOCKEEZ at the NBA Finals 2017",
+genre: "breakance",
+year: 2017
+)

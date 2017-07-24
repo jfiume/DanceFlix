@@ -37,10 +37,7 @@ header {
   border-radius: 2px;
   text-decoration: none;
   padding: 10px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
+  border-radius: 4%;
   font-size: 16px;
   letter-spacing: .025em;
 }
@@ -59,10 +56,8 @@ header {
   font-weight: lighter;
   text-decoration: none;
   padding: 10px 20px 10px 20px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
+  font-size: 16px;
+  border-radius: 2%;
 }
 
 .login-signup h3 {
@@ -83,6 +78,7 @@ header {
   font-size: 1.2em;
   margin: 1px 1px 10px 1px;
   padding: 10px;
+  font-weight: lighter;
 }
 
 .dropdown {
