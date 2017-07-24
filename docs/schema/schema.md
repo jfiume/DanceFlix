@@ -21,12 +21,6 @@ genre	      | string	  | not null
 year	      | integer	  | not null
 
 
-playlists
-
-column name	| data type	| details
-id	        | integer	  | not null, primary key
-user_id	    | integer	  | not null, foreign key (references users), indexed, unique[video_id]
-video_id	  | integer	  | not null, foreign key (references videos), indexed
 
 
 favorites
@@ -42,5 +36,13 @@ views
 column name	| data type	| details
 id	        | integer	  | not null, primary key
 count       | integer   | not null
+user_id	    | integer	  | not null, foreign key (references users), indexed, unique[video_id]
+video_id	  | integer	  | not null, foreign key (references videos), indexed
+
+
+playlists
+
+column name	| data type	| details
+id	        | integer	  | not null, primary key
 user_id	    | integer	  | not null, foreign key (references users), indexed, unique[video_id]
 video_id	  | integer	  | not null, foreign key (references videos), indexed

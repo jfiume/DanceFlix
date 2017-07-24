@@ -5,6 +5,7 @@
 body {
   background-color: black;
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  background-image: url("http://res.cloudinary.com/pancake/image/upload/v1500912434/default_path_background_woar7i.jpg");
 }
 
 header {
@@ -12,6 +13,9 @@ header {
   z-index: 1;
   position: fixed;
   top: 0%;
+  width: 100%;
+  // border-bottom: grey solid 1px;
+  // background-color: grey;
 }
 
 .logo {
@@ -84,9 +88,10 @@ header {
 .dropdown {
     position: absolute;
     top: 0%;
-    right: -300%;
+    right: 13%;
     color: white;
     display: inline-block;
+    text-align: justify;
 }
 
 .dropdown-content {

@@ -37,12 +37,13 @@ class SessionForm extends React.Component {
       password: "password"
     };
     this.props.processForm({user});
+    return (<Redirect to="/videos" />);
   }
 
   demoLogin() {
     if (this.props.formType === "login") {
       return (
-        <Link className="demo-login" to="/videos" onClick={this.handleDemo}>Demo Login</Link>
+        <button className="demo-login" onClick={this.handleDemo}>Demo Login</button>
       );
     }
   }
@@ -99,7 +100,7 @@ class SessionForm extends React.Component {
             />
         </label>
         {this.renderErrors()}
-        <Link id="signin" onClick={this.handleSubmit} to="/videos">{this.renderSubmit()}</Link>
+        <button id="signin" onClick={this.handleSubmit}>{this.renderSubmit()}</button>
         <br/>
         {this.navLink()}
       </div>

@@ -47,3 +47,4 @@ Drop Down Nav Bar
 Footer Nav
 Custom video controls
 Multiple sessions
+Favorites Playlists
