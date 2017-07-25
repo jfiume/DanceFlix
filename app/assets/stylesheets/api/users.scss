@@ -109,6 +109,7 @@ header {
     display: inline-block;
     text-align: justify;
     font-size: 36px;
+    cursor: context-menu;
 }
 
 .dropdown-content {
@@ -119,7 +120,7 @@ header {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
-    
+
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
