@@ -1,21 +1,21 @@
 import * as APIUtil from '../util/favorite_api_util';
 
 export const RECEIVE_FAVORITES = 'RECEIVE_FAVORITES';
-export const CREATE_FAVORITE = 'CREATE_FAVORITE';
-export const DELETE_FAVORITE = 'DELETE_FAVORITE';
+export const ADD_FAVORITE = 'CREATE_FAVORITE';
+export const REMOVE_FAVORITE = 'DELETE_FAVORITE';
 
 export const receiveFavorites = favorites => ({
   type: RECEIVE_FAVORITES,
   favorites
 });
 
-export const createFavorite = favorite => ({
-  type: CREATE_FAVORITE,
+export const addFavorite = favorite => ({
+  type: ADD_FAVORITE,
   favorite
 });
 
-export const deleteFavorite = favorite => ({
-  type: DELETE_FAVORITE,
+export const removeFavorite = favorite => ({
+  type: REMOVE_FAVORITE,
   favorite
 });
 
@@ -25,14 +25,14 @@ export const fetchFavorites = () => dispatch => (
   ))
 );
 
-export const createFavoriteAsync = favorite => dispatch => (
+export const createFavorite = favorite => dispatch => (
   APIUtil.createFavorite(favorite).then(favorites => (
     dispatch(createFavorite(favorites))
   ))
 );
 
 
-export const deleteFavoriteAsync = favorite => dispatch => (
+export const deleteFavorite = favorite => dispatch => (
   APIUtil.deleteFavorite(favorite).then(favorites => (
     dispatch(deleteFavorite(favorites))
   ))
