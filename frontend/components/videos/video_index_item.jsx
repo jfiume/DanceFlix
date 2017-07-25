@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
-const VideoIndexItem = ({ video }) => {
+const VideoIndexItem = ({ video, fav, favId, deleteFavorite}) => {
   return (
     <li className="video-index-item">
       <Link to={`/videos/${video.id}`}>
@@ -14,6 +13,7 @@ const VideoIndexItem = ({ video }) => {
           <p>Year: {video.year}</p>
         </article>
       </Link>
+      <button className="toggle-favorite" onClick={deleteFavorite}>{fav}</button>
     </li>
   );
 };

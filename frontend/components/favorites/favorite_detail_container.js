@@ -1,15 +1,21 @@
 import { connect } from 'react-redux';
-import FavoriteDetail from './favorite_detail';
+import VideoIndexItem from '../videos/video_index_item';
 import { createFavorite, deleteFavorite } from '../../actions/favorite_actions';
+
+const mapStateToProps = ({favorites}) => {
+  return {
+    favId: favorites.id
+  };
+};
 
 const mapDispatchToProps = (dispatch, {favorites}) => {
   return {
-    createFavorite: () => dispatch(createFavorite),
-    deleteFavorite: () => dispatch(deleteFavorite)
+    createFavorite: () => dispatch(createFavorite()),
+    deleteFavorite: id => dispatch(deleteFavorite(id))
   };
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
-)(FavoriteDetail);
+)(VideoIndexItem);

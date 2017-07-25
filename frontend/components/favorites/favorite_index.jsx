@@ -7,10 +7,14 @@ class FavoriteIndex extends Component {
     super(props);
   }
 
-
   componentDidMount() {
     this.props.fetchFavorites();
     this.props.fetchVideos();
+  }
+
+  shouldComponentUpdate() {
+    this.forceUpdate();
+    return true;
   }
 
   render () {
@@ -21,7 +25,7 @@ class FavoriteIndex extends Component {
         return (
           <section className="all-videos">
             <ul className="videos">
-              {Object.values(favoriteVideos).map(favVid => <VideoIndexItem key={favVid.id} video={favVid} />)}
+              {Object.values(favoriteVideos).map(favVid => <VideoIndexItem key={favVid.id} video={favVid} fav="UnFavorite" />)}
             </ul>
           </section>
         );

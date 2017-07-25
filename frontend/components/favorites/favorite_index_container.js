@@ -9,7 +9,7 @@ import {
 
 const mapStateToProps = ({favorites, videos}) => {
   return {
-    favoriteVideos: favVideos(favorites, videos)
+    favoriteVideos: favVideos(favorites, videos),
   };
 };
 
