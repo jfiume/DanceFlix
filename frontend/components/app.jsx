@@ -14,8 +14,22 @@ import {
 } from 'react-router-dom';
 
 
+const currentPage = () => {
+  const page = window.location.hash.slice(2);
+  if (page === "") {
+    return (
+      "splash"
+    );
+  } else {
+    return (
+      page
+    );
+  }
+};
+
+
 const App = () => (
-  <div>
+  <div id={currentPage()}>
     <header>
       <LogoRoute path="/videos" value="DANCEFLIX" />
       <FavsRoute path="/favorites" value="FAVORITES" />
