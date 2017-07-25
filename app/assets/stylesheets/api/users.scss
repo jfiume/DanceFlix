@@ -12,7 +12,7 @@ header {
   opacity: .9;
   z-index: 1;
   position: fixed;
-  top: 10%;
+  top: 5%;
   width: 100%;
   // border-bottom: grey solid 1px;
   // background-color: grey;
@@ -22,7 +22,7 @@ header {
   text-decoration: none;
   color: red;
   margin-left: 5%;
-  margin-top: 10%;
+  margin-top: 5%;
   font-size: 3em;
 }
 
@@ -65,7 +65,7 @@ header {
 }
 
 .login-signup h3 {
-  font-size: 3em;
+  font-size: 1.5em;
   font-weight: 600;
   margin: 5px 1px -12px 1px;
   padding: 10px;
@@ -74,7 +74,7 @@ header {
 .join-free {
   text-align: left;
   color: white;
-  margin-top: 15%;
+  margin-top: 20%;
   margin-left: 5%;
 }
 
@@ -92,6 +92,7 @@ header {
     color: white;
     display: inline-block;
     text-align: justify;
+    font-size: 36px;
 }
 
 .dropdown-content {

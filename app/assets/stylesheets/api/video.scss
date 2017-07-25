@@ -7,14 +7,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .video-index-item {
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .video-index-item:hover {
-  transform:scale(1.5, 1.3);
+  transform:scale(1.1, 1.2);
   .attributes {
     visibility: visible;
     position: relative;
@@ -25,7 +27,8 @@
   visibility: hidden;
 }
 .attributes p {
-  font-size: .5em;
+  text-align: justify;
+  font-size: 1em;
   list-style: none;
   text-decoration: none;
   color: white;
@@ -34,7 +37,9 @@
 }
 
 .current-video {
-  margin: 5%;
+  margin: 10%;
+  height: 600px;
+  width: 80%;
 }
 
 .all-videos {

@@ -20,7 +20,7 @@ class VideoShow extends Component {
     if (this.props.videoId === parseInt(this.props.match.params.id)) {
       const video = this.props.currentVideo.video;
       return (
-        <iframe className="current-video" height="500" width="500" src={video.video_url} frameBorder="0" allowFullScreen></iframe>
+        <iframe className="current-video" src={video.video_url} frameBorder="0" allowFullScreen></iframe>
       );
     } else {
       return (

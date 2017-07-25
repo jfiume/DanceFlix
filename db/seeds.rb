@@ -9,10 +9,11 @@
 User.destroy_all
 demo_user = User.create!(username: "WillDavis@willdemos.net", password: "password")
 
+
 Video.destroy_all
 video1 = Video.create(
   video_url: 'https://www.youtube.com/embed/dk-nWE9yeG8',
-  image_url: "http://res.cloudinary.com/pancake/image/upload/c_thumb,h_240,w_180/v1500586087/Strictly-Ballroom_unr1re.png",
+  image_url: "http://res.cloudinary.com/pancake/image/upload/c_scale,h_360,w_480/v1500586087/Strictly-Ballroom_unr1re.png",
   description: "The final paso doble from Strictly Ballroom",
   title: "Paso Doble",
   genre: "Paso Doble",
@@ -21,7 +22,7 @@ video1 = Video.create(
 
 video2 = Video.create(
   video_url: "https://www.youtube.com/embed/16EuniBuiz0",
-  image_url: "http://res.cloudinary.com/pancake/image/upload/c_thumb,h_240,w_180/v1500586730/WestCostSwing_ncfmty.jpg",
+  image_url: "http://res.cloudinary.com/pancake/image/upload/c_scale,h_360,w_480/v1500586730/WestCostSwing_ncfmty.jpg",
   description: "They do a human cartwheel!",
   title: "West Cost Swing for the win",
   genre: "West Cost Swing",
@@ -30,8 +31,8 @@ video2 = Video.create(
 
 video3 = Video.create(
 video_url: "https://www.youtube.com/embed/Cj3AV92fJ90",
-image_url: "http://res.cloudinary.com/pancake/image/upload/c_thumb,h_240,w_180/v1500863213/maxresdefault_vcfbc3.jpg",
-description: "JABBAWOCKEEZ perform at the 2017 NBA Finals Championship Game halftime show",
+image_url: "http://res.cloudinary.com/pancake/image/upload/c_scale,h_360,w_480/v1500863213/maxresdefault_vcfbc3.jpg",
+description: "JABBAWOCKEEZ perform at the 2017 NBA Finals Championship Game",
 title: "JABBAWOCKEEZ at the NBA Finals 2017",
 genre: "breakance",
 year: 2017
@@ -89,6 +90,7 @@ video_url: "https://www.youtube.com/embed/7oKPYe53h78",
 image_url: "http://res.cloudinary.com/pancake/image/upload/v1500958755/0-5_v4ydct.jpg",
 description: "Grease is the word",
 title: "Grease - You're the one that I want",
+genre: "grease lightening",
 year: 1978
 )
 
@@ -97,5 +99,12 @@ video_url: "https://www.youtube.com/embed/sT2daisxdvA",
 image_url: "http://res.cloudinary.com/pancake/image/upload/v1500959013/0-6_fgrfrx.jpg",
 description: "A Brooklyn teenager feels his only chance to succeed is as the king of the disco floor.",
 title: "Saturday Night Fever",
+genre: "Disco",
 year: 1977
 )
+
+Favorite.destroy_all
+favorite1 = Favorite.create(user_id: demo_user.id, video_id: video1.id)
+favorite2 = Favorite.create(user_id: demo_user.id, video_id: video2.id)
+favorite3 = Favorite.create(user_id: demo_user.id, video_id: video3.id)
+favorite4 = Favorite.create(user_id: demo_user.id, video_id: video4.id)
