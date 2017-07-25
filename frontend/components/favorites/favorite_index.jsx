@@ -14,24 +14,25 @@ class FavoriteIndex extends Component {
   }
 
   render () {
-    if (Object.keys(this.props.favorites).length > 0) {
-      console.log(this.props);
-      // Object.values(favorites).forEach(fav => {
-      //   console.log(fav);
-      //   console.log(this.props);
-      // }
-
-      return (
-        <div>does this work?</div>
-      //   <section className="all-videos">
-      //     <ul className="videos">
-      //       {favoriteVideos.map(favVid => <VideoIndexItem key={favVid.id} videoId={favVid} />)}
-      //     </ul>
-      //   </section>
-      );
+    if (Object.keys(this.props.favoriteVideos).length > 0) {
+      const { favoriteVideos } = this.props;
+      const vidId = Object.values(favoriteVideos).map(fav => fav.id);
+      if (vidId) {
+        return (
+          <section className="all-videos">
+            <ul className="videos">
+              {Object.values(favoriteVideos).map(favVid => <VideoIndexItem key={favVid.id} video={favVid} />)}
+            </ul>
+          </section>
+        );
+      } else {
+        return (
+          <div>loading 1</div>
+        );
+      }
     } else {
       return (
-        <div>loading</div>
+        <div>loading 2</div>
       );
     }
     }
