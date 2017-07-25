@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const VideoIndexItem = ({ video, fav, favId, deleteFavorite}) => {
+const VideoIndexItem = ({ video, fav, deleteFavorite}) => {
   return (
     <li className="video-index-item">
       <Link to={`/videos/${video.id}`}>

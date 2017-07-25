@@ -21,6 +21,15 @@
     visibility: visible;
     position: relative;
   }
+  .toggle-favorite {
+    visibility: visible;
+    position: fixed;
+    float: right;
+    top: 0%;
+    right: 0%;
+    background-color: red;
+    color: white;
+  }
 }
 
 .attributes {
@@ -34,6 +43,8 @@
   color: white;
   margin: 0px;
   padding: 0px;
+  word-break: normal;
+  width: 300px;
 }
 
 .current-video {
@@ -44,4 +55,8 @@
 
 .all-videos {
   margin-top: 10%;
+}
+
+.toggle-favorite {
+  visibility: hidden;
 }
