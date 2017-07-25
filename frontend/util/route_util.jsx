@@ -48,6 +48,16 @@ const Favs = ({component: path, loggedIn, value}) => (
     )}/>
 );
 
+const Splash = ({component: Component, path, loggedIn}) => (
+  <Route path={path} render={(props) => (
+      loggedIn ? (
+        <Component {...props} />
+        ) : (
+        <Redirect to="/" />
+        )
+      )} />
+);
+
 
 const mapStateToProps = state => {
   return {loggedIn: Boolean(state.session.currentUser)};
@@ -60,3 +70,5 @@ export const ProtectedRoute = withRouter(connect(mapStateToProps, null)(Protecte
 export const LogoRoute = withRouter(connect(mapStateToProps, null)(Logo));
 
 export const FavsRoute = withRouter(connect(mapStateToProps, null)(Favs));
+
+export const SplashRoute = withRouter(connect(mapStateToProps, null)(Splash));
