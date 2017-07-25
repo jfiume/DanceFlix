@@ -12,10 +12,6 @@ class FavoriteIndex extends Component {
     this.props.fetchVideos();
   }
 
-  shouldComponentUpdate() {
-    this.forceUpdate();
-    return true;
-  }
 
   render () {
     if (Object.keys(this.props.favoriteVideos).length > 0) {

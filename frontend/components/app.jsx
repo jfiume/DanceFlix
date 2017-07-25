@@ -4,7 +4,7 @@ import SessionFormContainer from './session_form/session_form_container';
 import VideoIndexContainer from './videos/video_index_container';
 import VideoShowContainer from './videos/video_show_container';
 import FavoriteIndexContiner from './favorites/favorite_index_container';
-import { AuthRoute, ProtectedRoute, LogoRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute, LogoRoute, FavsRoute } from '../util/route_util';
 import {
   Route,
   Redirect,
@@ -18,6 +18,7 @@ const App = () => (
   <div>
     <header>
       <LogoRoute path="/videos" value="DANCEFLIX" />
+      <FavsRoute path="/favorites" value="FAVORITES" />
       <Route path="/videos" component={GreetingContainer} />
     </header>
     <Switch>
