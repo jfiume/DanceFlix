@@ -43,7 +43,7 @@ const Favs = ({component: path, loggedIn, value}) => (
       loggedIn? (
         <Link className="favorites-button" to="/favorites">{value}</Link>
       ) : (
-        <Link className="favorites-button" to="/">{value}</Link>
+        <div></div>
         )
     )}/>
 );

@@ -19,7 +19,7 @@ const App = () => (
     <header>
       <LogoRoute path="/videos" value="DANCEFLIX" />
       <FavsRoute path="/favorites" value="FAVORITES" />
-      <Route path="/videos" component={GreetingContainer} />
+      <ProtectedRoute path="/" component={GreetingContainer} />
     </header>
     <Switch>
       <AuthRoute path="/login" component={SessionFormContainer} />
