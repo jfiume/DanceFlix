@@ -8,7 +8,8 @@ class FavoriteIndex extends Component {
   }
 
   componentDidMount() {
-    this.props.fetchFavorites();
+    console.log(this.props);
+    this.props.fetchFavoritesByUser(this.props.session.currentUser.id);
     this.props.fetchVideos();
   }
 

@@ -2,7 +2,11 @@ class Api::FavoritesController < ApplicationController
   before_action :require_logged_in
 
   def index
-    @favorites = Favorite.all
+    if params[user_id: "userId"]
+      @favorites = Favorite.where("user_id = ?", { user_id: "userId" })
+    else
+      @favorites = Favorite.all
+    end
     render "api/favorites/index"
   end
 

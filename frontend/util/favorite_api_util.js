@@ -5,6 +5,14 @@ export const fetchFavorites = () => (
   })
 );
 
+export const fetchFavoritesByUser = (userId) => (
+  $.ajax({
+    method: 'GET',
+    url: 'api/favorites',
+    data: userId
+  })
+);
+
 export const createFavorite = (favorite) => (
   $.ajax({
     method: 'POST',

@@ -7,15 +7,16 @@ import {
   fetchFavorites,
 } from '../../actions/favorite_actions';
 
-const mapStateToProps = ({favorites, videos}) => {
+const mapStateToProps = ({favorites, videos, session}) => {
   return {
     favoriteVideos: favVideos(favorites, videos),
+    session
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchFavorites: () => dispatch(fetchFavorites()),
+    fetchFavoritesByUser: (userId) => dispatch(fetchFavorites(userId)),
     fetchVideos: () => dispatch(fetchVideos())
   };
 };
