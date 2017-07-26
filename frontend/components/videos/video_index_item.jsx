@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import FavoriteDetailContainer from '../favorites/favorite_detail_container';
 
-const VideoIndexItem = ({ video, fav, deleteFavorite}) => {
+const VideoIndexItem = ({ video, fav }) => {
   return (
     <li className="video-index-item">
       <Link to={`/videos/${video.id}`}>
@@ -13,7 +14,7 @@ const VideoIndexItem = ({ video, fav, deleteFavorite}) => {
           <p>Year: {video.year}</p>
         </article>
       </Link>
-      <button className="toggle-favorite" onClick={deleteFavorite}>{fav}</button>
+      <FavoriteDetailContainer videoId={video.id} favorite={video.favorites[0]}/>
     </li>
   );
 };

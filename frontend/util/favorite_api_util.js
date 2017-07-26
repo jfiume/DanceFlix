@@ -1,10 +1,3 @@
-export const fetchFavorites = () => (
-  $.ajax({
-    method: 'GET',
-    url: 'api/favorites',
-  })
-);
-
 export const fetchFavoritesByUser = (user_id) => (
   $.ajax({
     method: 'GET',
@@ -24,6 +17,6 @@ export const createFavorite = (favorite) => (
 export const deleteFavorite = (id) => (
   $.ajax({
     method: 'DELETE',
-    url: 'api/favorites/${id}'
+    url: `api/favorites/${id}`
   })
 );

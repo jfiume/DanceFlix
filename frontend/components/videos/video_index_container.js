@@ -7,9 +7,9 @@ import {
 
 
 const mapStateToProps = ({videos}) => {
-  return (
-    receiveVideos(videos)
-  );
+  return ({
+    videos
+  });
 };
 
 const mapDispatchToProps = dispatch => {

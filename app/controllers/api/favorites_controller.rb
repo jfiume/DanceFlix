@@ -7,23 +7,23 @@ class Api::FavoritesController < ApplicationController
     else
       @favorites = Favorite.all
     end
-    render "api/favorites/index"
+    render :index
   end
 
   def create
     @favorite = Favorite.new(favorite_params)
     @favorite.user_id = current_user.id
     if @favorite.save
-      render "api/favorites/index"
+      render :show
     else
       flash.now[:errors] = @favorite.errors.full_messages
     end
   end
 
   def destroy
-    @favorite = favorite.find(params[:id])
+    @favorite = Favorite.find(params[:id])
     @favorite.destroy
-    redirect_to :index
+    render :show
   end
 
   private

@@ -1,4 +1,5 @@
 import * as APIUtil from '../util/favorite_api_util';
+import { fetchVideos } from './video_actions';
 
 export const RECEIVE_FAVORITES = 'RECEIVE_FAVORITES';
 export const ADD_FAVORITE = 'CREATE_FAVORITE';
@@ -33,13 +34,13 @@ export const fetchFavoritesByUser = (userId) => dispatch => (
 
 export const createFavorite = favorite => dispatch => (
   APIUtil.createFavorite(favorite).then(favorites => (
-    dispatch(createFavorite(favorites))
+    dispatch(fetchVideos())
   ))
 );
 
 
 export const deleteFavorite = favorite => dispatch => (
   APIUtil.deleteFavorite(favorite).then(favorites => (
-    dispatch(deleteFavorite(favorites))
+    dispatch(fetchVideos())
   ))
 );

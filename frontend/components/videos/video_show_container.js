@@ -8,7 +8,7 @@ import {
 const mapStateToProps = ({ videos }) => {
   const videoId = parseInt(Object.keys(videos));
   return {
-    currentVideo: receiveVideo(videos[videoId]),
+    currentVideo: videos[videoId],
     videoId
   };
 };

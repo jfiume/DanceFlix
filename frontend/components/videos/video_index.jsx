@@ -5,6 +5,7 @@ import VideoIndexItem from './video_index_item';
 class VideoIndex extends Component {
   constructor(props) {
     super(props);
+    console.log(props);
   }
 
   componentDidMount() {
@@ -14,7 +15,7 @@ class VideoIndex extends Component {
   render() {
     if (Object.keys(this.props.videos).length > 0) {
       const { videos } = this.props;
-      
+
       return (
         <section className="all-videos">
           <ul className="videos">

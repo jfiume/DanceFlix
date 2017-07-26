@@ -21,7 +21,7 @@ class FavoriteIndex extends Component {
         return (
           <section className="all-videos">
             <ul className="videos">
-              {Object.values(favoriteVideos).map(favVid => <VideoIndexItem key={favVid.id} video={favVid} fav="UnFavorite" />)}
+              {Object.values(favoriteVideos).map(favVid => <VideoIndexItem key={favVid.id} video={favVid} />)}
             </ul>
           </section>
         );
