@@ -38,15 +38,6 @@ const Logo = ({component: path, loggedIn, value}) => (
     )}/>
 );
 
-const Favs = ({component: path, loggedIn, value}) => (
-  <Route path={path} render={() => (
-      loggedIn? (
-        <Link className="favorites-button" to="/favorites">{value}</Link>
-      ) : (
-        <div></div>
-        )
-    )}/>
-);
 
 const Splash = ({component: Component, path, loggedIn}) => (
   <Route path={path} render={(props) => (
@@ -68,7 +59,5 @@ export const AuthRoute = withRouter(connect(mapStateToProps, null)(Auth));
 export const ProtectedRoute = withRouter(connect(mapStateToProps, null)(Protected));
 
 export const LogoRoute = withRouter(connect(mapStateToProps, null)(Logo));
-
-export const FavsRoute = withRouter(connect(mapStateToProps, null)(Favs));
 
 export const SplashRoute = withRouter(connect(mapStateToProps, null)(Splash));

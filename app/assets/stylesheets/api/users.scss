@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background-color: black;
+  background-color: rgb(20,20,20);
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
@@ -162,7 +162,18 @@ header {
     display: block;
 }
 
+.dropdown-content .header-name {
+  font-size: 1.7em;
+}
+
+.favorites {
+  color: white;
+  text-decoration: none;
+  font-size: 1.7em;
+}
+
 .logout {
   text-decoration: none;
   color: white;
+  font-size: 1.2em;
 }

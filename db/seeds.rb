@@ -31,7 +31,7 @@ video2 = Video.create(
 
 video3 = Video.create(
 video_url: "https://www.youtube.com/embed/Cj3AV92fJ90",
-image_url: "http://res.cloudinary.com/pancake/image/upload/c_scale,h_300,w_400/v1500863213/maxresdefault_vcfbc3.jpg",
+image_url: "http://res.cloudinary.com/pancake/image/upload/c_thumb,h_300,w_400/v1501040748/maxresdefault-1_tulp5n.jpg",
 description: "JABBAWOCKEEZ perform at the 2017 NBA Finals Championship Game",
 title: "JABBAWOCKEEZ at the NBA Finals 2017",
 genre: "breakance",
@@ -40,7 +40,7 @@ year: 2017
 
 video4 = Video.create(
 video_url: "https://www.youtube.com/embed/PizxUk3lG3c",
-image_url: "http://res.cloudinary.com/pancake/image/upload/c_scale,h_300,w_400/v1500957162/0_h4ntpm.jpg",
+image_url: "http://res.cloudinary.com/pancake/image/upload/c_thumb,h_300,w_400/v1501040751/maxresdefault-2_j4prie.jpg",
 description: "Derek Hough Dancing with the Macy's Stars of Dance-Jaimie Goodwin.",
 title: "Moving Room Dance",
 genre: "ballroom",
@@ -49,7 +49,7 @@ year: "2013"
 
 video5 = Video.create(
 video_url: "https://www.youtube.com/embed/SKDnPGD8CIw",
-image_url: "http://res.cloudinary.com/pancake/image/upload/c_scale,h_300,w_400/v1500957595/0-1_gwms3u.jpg",
+image_url: "http://res.cloudinary.com/pancake/image/upload/c_thumb,h_300,w_400/v1501040754/maxresdefault-3_kkamjo.jpg",
 description: "La La Land - A Lovely Night",
 title: "La La Land - A Lovely Night",
 genre: "Jazz",
@@ -87,7 +87,7 @@ year: 1984
 
 video9 = Video.create(
 video_url: "https://www.youtube.com/embed/7oKPYe53h78",
-image_url: "http://res.cloudinary.com/pancake/image/upload/c_scale,h_300,w_400/v1500958755/0-5_v4ydct.jpg",
+image_url: "http://res.cloudinary.com/pancake/image/upload/c_thumb,h_300,w_400/v1501040763/mqdefault_ylbug7.jpg",
 description: "Grease is the word",
 title: "Grease - You're the one that I want",
 genre: "grease lightening",
