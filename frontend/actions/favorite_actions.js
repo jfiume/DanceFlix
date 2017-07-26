@@ -26,7 +26,7 @@ export const fetchFavorites = () => dispatch => (
 );
 
 export const fetchFavoritesByUser = (userId) => dispatch => (
-  APIUtil.fetchFavorites(userId).then(favorites => (
+  APIUtil.fetchFavoritesByUser(userId).then(favorites => (
     dispatch(receiveFavorites(favorites))
   ))
 );

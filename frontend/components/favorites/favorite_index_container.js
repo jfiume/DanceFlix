@@ -4,7 +4,7 @@ import { fetchVideos } from '../../actions/video_actions';
 import { favVideos } from '../../reducers/selectors';
 import {
   receiveFavorites,
-  fetchFavorites,
+  fetchFavoritesByUser,
 } from '../../actions/favorite_actions';
 
 const mapStateToProps = ({favorites, videos, session}) => {
@@ -16,7 +16,7 @@ const mapStateToProps = ({favorites, videos, session}) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchFavoritesByUser: (userId) => dispatch(fetchFavorites(userId)),
+    fetchFavoritesByUser: (userId) => dispatch(fetchFavoritesByUser(userId)),
     fetchVideos: () => dispatch(fetchVideos())
   };
 };
