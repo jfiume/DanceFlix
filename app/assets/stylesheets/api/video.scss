@@ -7,25 +7,30 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 5%;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .video-index-item {
-  margin: 10px 0px;
+  margin: 0px -10px -10px 0px;
+  padding: 0px;
 }
 
 .video-index-item:hover {
-  transform:scale(1.1, 1.2);
+  transform: rotate(0deg) scale(1.6, 1.8) skew(0deg) translate(10%, 0px);
+  -webkit-animation: translate(20px, 0px) scale(1.8, 2.0);
   .attributes {
     visibility: visible;
-    position: relative;
+    position: fixed;
+    float: left;
+    top: 50%;
+    left: 0%;
   }
   .toggle-favorite {
     visibility: visible;
     position: fixed;
     float: right;
-    top: 0%;
+    top: 40%;
     right: 0%;
     background-color: red;
     color: white;
@@ -35,9 +40,9 @@
 .attributes {
   visibility: hidden;
 }
-.attributes p {
+.attributes p, span {
   text-align: justify;
-  font-size: 1em;
+  font-size: .8em;
   list-style: none;
   text-decoration: none;
   color: white;

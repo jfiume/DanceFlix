@@ -3,16 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background-color: black;
+  background-color: rgb(5,5,5);
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 #videos {
-  background-color: rgb(20,20,20);
+  background-color: #141414;
 }
 
 #favorites {
-  background-color: rgb(20,20,20);
+  background-color: #141414;
 }
 
 #signup, #login {
@@ -44,6 +44,7 @@ header {
   position: fixed;
   top: 5%;
   width: 100%;
+  padding-top: 10%;
   // border-bottom: grey solid 1px;
   // background-color: grey;
 }
@@ -113,12 +114,22 @@ header {
 .dropdown {
     position: absolute;
     top: 0%;
-    right: 13%;
-    color: white;
-    display: inline-block;
+    right: 10%;
+    display: inline;
     text-align: justify;
-    font-size: 36px;
     cursor: context-menu;
+    margin: 1%;
+    width: 20%;
+}
+
+.dropdown span {
+  color: white;
+  font-size: 36px;
+
+}
+
+.dropdown img {
+  margin-right: 1%;
 }
 
 .dropdown-content {
@@ -174,6 +185,7 @@ header {
 .dropdown-content .header-name {
   font-size: 1.7em;
 }
+
 
 .favorites {
   color: white;

@@ -21,7 +21,7 @@ class FavoriteDetail extends Component {
 
   render() {
     return (
-    <button className="favorites-button" onClick={this.toggleFavorite}>happy button</button>
+    <button className="toggle-favorite" onClick={this.toggleFavorite}>happy button</button>
     );
   }
 }

@@ -14,7 +14,7 @@ const sessionLinks = () => (
 const personalGreeting = (currentUser, logout) => {
   const name = currentUser.username.slice(0, currentUser.username.indexOf("@"));
   return (
-    <hgroup className="dropdown">{name}
+    <hgroup className="dropdown"><img src="http://res.cloudinary.com/pancake/image/upload/v1501112677/PICON_026_tvd3pr.png"></img><span>{name}</span>
       <nav className="dropdown-content">
         <h6 className="header-name">{name}</h6>
         <Link className="favorites" to="/favorites">Favorites</Link>
