@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 const sessionLinks = () => (
   <nav className="login-signup">
-    <Link className="login" to="/login">Demo Login</Link>
-    <Link className="login" to="/login">Sign In</Link>
     <div className="join-free">
       <h3>See what’s next.</h3>
       <h4>WATCH ANYWHERE. CANCEL ANYTIME.</h4>

@@ -44,7 +44,7 @@ const Splash = ({component: Component, path, loggedIn}) => (
       loggedIn ? (
         <Component {...props} />
         ) : (
-        <Redirect to="/" />
+        <Link className="login" to="/login">Sign In</Link>
         )
       )} />
 );
