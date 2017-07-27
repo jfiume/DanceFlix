@@ -3,7 +3,7 @@ import { fetchVideos } from './video_actions';
 
 export const RECEIVE_FAVORITES = 'RECEIVE_FAVORITES';
 export const ADD_FAVORITE = 'CREATE_FAVORITE';
-export const REMOVE_FAVORITE = 'DELETE_FAVORITE';
+export const REMOVE_FAVORITE = 'REMOVE_FAVORITE';
 
 export const receiveFavorites = favorites => ({
   type: RECEIVE_FAVORITES,
@@ -33,14 +33,15 @@ export const fetchFavoritesByUser = (userId) => dispatch => (
 );
 
 export const createFavorite = favorite => dispatch => (
-  APIUtil.createFavorite(favorite).then(favorites => (
+  APIUtil.createFavorite(favorite).then(() => (
     dispatch(fetchVideos())
   ))
 );
 
 
-export const deleteFavorite = favorite => dispatch => (
-  APIUtil.deleteFavorite(favorite).then(favorites => (
-    dispatch(fetchVideos())
+export const deleteFavorite = id => dispatch => (
+  APIUtil.deleteFavorite(id).then((favorite) => (
+    dispatch(fetchVideos()),
+    dispatch(removeFavorite(favorite))
   ))
 );

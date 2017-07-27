@@ -2,10 +2,10 @@ import { connect } from 'react-redux';
 import FavoriteDetail from './favorite_detail';
 import { createFavorite, deleteFavorite } from '../../actions/favorite_actions';
 
-const mapStateToProps = ({favorites, videos, session}) => {
+const mapStateToProps = ({session}, ownProps) => {
   return {
-    favorites,
-    videos,
+    videoId: ownProps.videoId,
+    favorite: ownProps.favorite,
     session
   };
 };

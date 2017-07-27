@@ -82,9 +82,10 @@ class SessionForm extends React.Component {
   render () {
     return (
       <div className="login-form-container">
-        <form className="login-form-box">
-          {this.demoLogin()}
-          <div id="sign-in">{this.renderSubmit()}</div>
+        <div className="login-form-box">
+        <div id="sign-in">{this.renderSubmit()}</div>
+        {this.demoLogin()}
+        <form>
           <div className="login-form">
             <br/>
             <label>Email <br/>
@@ -108,6 +109,7 @@ class SessionForm extends React.Component {
         {this.navLink()}
       </div>
     </form>
+    </div>
   </div>
 );
 }

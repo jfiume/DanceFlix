@@ -12,7 +12,9 @@ const sessionLinks = () => (
 );
 
 const personalGreeting = (currentUser, logout) => {
-  const name = currentUser.username.slice(0, currentUser.username.indexOf("@"));
+  const name = currentUser.username.includes("@") ?
+    currentUser.username.slice(0, currentUser.username.indexOf("@")) :
+      currentUser.username;
   return (
     <hgroup className="dropdown"><img src="http://res.cloudinary.com/pancake/image/upload/v1501112677/PICON_026_tvd3pr.png"></img><span>{name}</span>
       <nav className="dropdown-content">

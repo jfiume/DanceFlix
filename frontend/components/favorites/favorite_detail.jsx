@@ -9,20 +9,49 @@ class FavoriteDetail extends Component {
 
   toggleFavorite(e) {
     e.preventDefault;
-    if (this.props.favorite !== undefined) {
-      console.log("I AM DELETING");
-      return this.props.deleteFavorite(this.props.favorite.id);
+    console.log(this.props.favorite);
+    if (this.props.favorite) {
+      console.log(`I AM DELETING ${this.props.favorite.id}`);
+      return (
+        this.props.deleteFavorite(this.props.favorite.id)
+      );
     } else {
       console.log("I AM CREATING");
-      return this.props.createFavorite({user_id: this.props.session.currentUser.id, video_id: this.props.videoId});
+      return (
+        this.props.createFavorite(
+          {user_id: this.props.session.currentUser.id,
+            video_id: this.props.videoId}
+        )
+      );
     }
   }
 
+  // toggleFavorite(e) {
+  //   e.preventDefault;
+  //   console.log(this.props.favorite);
+  //   if (!this.props.favorite) {
+  //     console.log("I AM CREATING");
+  //     return (
+  //       this.props.createFavorite(
+  //         {user_id: this.props.session.currentUser.id,
+  //           video_id: this.props.videoId}
+  //       )
+  //     );
+  //   } else {
+  //     console.log(`I AM DELETING ${this.props.favorite.id}`);
+  //     return (
+  //       this.props.deleteFavorite(this.props.favorite.id)
+  //     );
+  //   }
+  // }
+
+
+
   toggleFavs() {
     if (this.props.favorite) {
-      return "-";
+      return '💔';
     } else {
-      return "+";
+      return '❤️';
     }
   }
 

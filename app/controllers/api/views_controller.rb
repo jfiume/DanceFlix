@@ -25,7 +25,9 @@ class Api::ViewsController < ApplicationController
 
   def update
     @view = View.find(params[:id])
-    if @view.update_attributes(params[:count] + 1)
+    new_count = @view.count + 1
+    @view = View.update(count: new_count)
+    if @view.save
       render :show
     else
       flash.now[:errors] = @view.errors.full_messages
