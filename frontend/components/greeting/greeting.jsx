@@ -16,9 +16,10 @@ const personalGreeting = (currentUser, logout) => {
   return (
     <hgroup className="dropdown"><img src="http://res.cloudinary.com/pancake/image/upload/v1501112677/PICON_026_tvd3pr.png"></img><span>{name}</span>
       <nav className="dropdown-content">
-        <Link className="favorites" to="/favorites">Favorites</Link>
-        <h6 className="header-name">Most Viewed</h6>
-        <Link className="logout" to="/" onClick={logout}>Sign out of DanceFlix</Link>
+        <p><Link className="dropdown-links" to="/favorites">Favorites</Link></p>
+        <p><Link className="dropdown-links" to="/videos">All Videos</Link></p>
+        <p><Link className="dropdown-links" to="/views">Most Viewed</Link></p>
+        <p><Link className="logout" to="/" onClick={logout}>Sign out of DanceFlix</Link></p>
       </nav>
     </hgroup>
   );

@@ -83,7 +83,7 @@ class SessionForm extends React.Component {
     return (
       <div className="login-form-container">
         <form className="login-form-box">
-          <div>{this.demoLogin()}</div>
+          {this.demoLogin()}
           <div id="sign-in">{this.renderSubmit()}</div>
           <div className="login-form">
             <br/>

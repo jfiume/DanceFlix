@@ -4,14 +4,13 @@ import { createFavorite, deleteFavorite } from '../../actions/favorite_actions';
 
 const mapStateToProps = ({favorites, videos, session}) => {
   return {
-    favId: favorites.id,
     favorites,
     videos,
     session
   };
 };
 
-const mapDispatchToProps = (dispatch, {favorites}) => {
+const mapDispatchToProps = (dispatch) => {
   return {
     createFavorite: (favorite) => dispatch(createFavorite(favorite)),
     deleteFavorite: id => dispatch(deleteFavorite(id))
