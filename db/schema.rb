@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170724173831) do
+ActiveRecord::Schema.define(version: 20170727051258) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,17 @@ ActiveRecord::Schema.define(version: 20170724173831) do
     t.datetime "updated_at",  null: false
     t.index ["image_url"], name: "index_videos_on_image_url", unique: true, using: :btree
     t.index ["video_url"], name: "index_videos_on_video_url", unique: true, using: :btree
+  end
+
+  create_table "views", force: :cascade do |t|
+    t.integer  "count",      null: false
+    t.integer  "user_id",    null: false
+    t.integer  "video_id",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id", "video_id"], name: "index_views_on_user_id_and_video_id", unique: true, using: :btree
+    t.index ["user_id"], name: "index_views_on_user_id", using: :btree
+    t.index ["video_id"], name: "index_views_on_video_id", using: :btree
   end
 
 end

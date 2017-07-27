@@ -10,6 +10,7 @@ class User < ApplicationRecord
   before_validation :ensure_session_token_uniqueness
 
   has_many :favorites
+  has_many :views
 
   def self.find_by_credentials(username, password)
     user = User.find_by_username(username)
