@@ -16,7 +16,6 @@ const personalGreeting = (currentUser, logout) => {
   return (
     <hgroup className="dropdown"><img src="http://res.cloudinary.com/pancake/image/upload/v1501112677/PICON_026_tvd3pr.png"></img><span>{name}</span>
       <nav className="dropdown-content">
-        <h6 className="header-name">{name}</h6>
         <Link className="favorites" to="/favorites">Favorites</Link>
         <h6 className="header-name">Most Viewed</h6>
         <Link className="logout" to="/" onClick={logout}>Sign out of DanceFlix</Link>

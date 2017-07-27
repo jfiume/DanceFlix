@@ -19,9 +19,17 @@ class FavoriteDetail extends Component {
     }
   }
 
+  toggleFavs() {
+    if (this.props.favorite) {
+      return "-";
+    } else {
+      return "+";
+    }
+  }
+
   render() {
     return (
-    <button className="toggle-favorite" onClick={this.toggleFavorite}>happy button</button>
+    <button className="toggle-favorite" onClick={this.toggleFavorite}>{this.toggleFavs()}</button>
     );
   }
 }

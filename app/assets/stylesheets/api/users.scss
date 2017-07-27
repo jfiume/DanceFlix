@@ -114,22 +114,24 @@ header {
 .dropdown {
     position: absolute;
     top: 0%;
-    right: 10%;
+    right: 0%;
     display: inline;
     text-align: justify;
     cursor: context-menu;
     margin: 1%;
-    width: 20%;
+    width: 15%;
 }
 
 .dropdown span {
   color: white;
-  font-size: 36px;
-
+  font-size: 24px;
+  margin-bottom: 2%;
+  justify-content: center;
+  align-items: center;
 }
 
 .dropdown img {
-  margin-right: 1%;
+  margin-right: 3%;
 }
 
 .dropdown-content {
