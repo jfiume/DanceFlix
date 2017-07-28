@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {SearchResultsIndex} from './search_results_index';
+import SearchResultsContainer from './search_results_index_container';
 
 class SearchResultItems extends Component {
   constructor(props) {
@@ -32,10 +33,10 @@ class SearchResultItems extends Component {
     const {results} = this.props;
     // console.log(this.props);
     return (
-      <div>
-        <input type="text" value={this.state.val} onChange={this.onChange} onSubmit={this.onSubmit} />
+      <form onSubmit={this.onSubmit}>
+        <input type="text" value={this.state.val} onChange={this.onChange} type="submit" />
         <Results results={results}/>
-      </div>
+      </form>
     );
   }
 }
