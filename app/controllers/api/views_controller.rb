@@ -16,6 +16,7 @@ class Api::ViewsController < ApplicationController
   def create
     @view = View.new(view_params)
     @view.user_id = current_user.id
+    @view.count = 1
     if @view.save
       render :show
     else
@@ -25,8 +26,7 @@ class Api::ViewsController < ApplicationController
 
   def update
     @view = View.find(params[:id])
-    new_count = @view.count + 1
-    @view = View.update(count: new_count)
+    @view.count += 1
     if @view.save
       render :show
     else
@@ -36,6 +36,6 @@ class Api::ViewsController < ApplicationController
 
   private
   def view_params
-    params.require(:view).permit(:id, :count, :user_id, :video_id)
+    params.require(:view).permit(:user_id, :video_id)
   end
 end

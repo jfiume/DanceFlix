@@ -10,23 +10,13 @@ class SearchResultItems extends Component {
       val: ""
     };
     this.onChange = this.onChange.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
   }
 
   onChange(e) {
     e.preventDefault;
     this.setState({val: e.target.value}, () => {
-
       this.props.searchVideo({[this.state.type]: this.state.val});
     });
-  }
-
-  onSubmit(e) {
-    e.preventDefault;
-    const {results} = this.props;
-    return (
-    <SearchResultsContainer results={results}/>
-    );
   }
 
   render() {
@@ -35,20 +25,8 @@ class SearchResultItems extends Component {
     return (
       <form className="search">
         <input type="text" value={this.state.val} onChange={this.onChange} />
-        <button onClick={this.onSubmit}>Search</button>
-        <Results results={this.state.val} />
       </form>
     );
   }
 }
 export default SearchResultItems;
-
-const Results = ({results}) => {
-  if (results.length) {
-    return (<ul>{
-      results.map((result, i) => <li key={i}>{result.title}</li>)
-    }</ul>);
-  }
-
-  return <span>No Results</span>;
-};

@@ -11,7 +11,7 @@ https://danceflix.herokuapp.com/
 - User accounts with secure authentication
 - Video streaming with controls and no interruption
 - User can favorite their preferred videos
-- User can search for a video by title, genre, and year.
+- User can search for a video by title.
 
 
 ## Project Design
