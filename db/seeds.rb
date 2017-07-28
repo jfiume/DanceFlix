@@ -9,6 +9,7 @@
 User.destroy_all
 demo_user = User.create!(username: "WillDavis@willdemos.net", password: "password")
 super_user = User.create(username: "Superman@batmansucks.org", password: "password")
+bat_user = User.create(username: "Batman@supermansucks.net", password: "password")
 
 
 Video.destroy_all
@@ -112,3 +113,6 @@ favorite4 = Favorite.create(user_id: demo_user.id, video_id: video4.id)
 
 favorite5 = Favorite.create(user_id: super_user.id, video_id: video10.id)
 favorite6 = Favorite.create(user_id: super_user.id, video_id: video9.id)
+
+favorite7 = Favorite.create(user_id: bat_user.id, video_id: video6.id)
+favorite8 = Favorite.create(user_id: bat_user.id, video_id: video7.id)

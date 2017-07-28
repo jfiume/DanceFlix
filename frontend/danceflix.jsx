@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.fetchViewsByUser = APIUtilViews.fetchViewsByUser;
   window.createView = APIUtilViews.createView;
   window.addView = APIUtilViews.addView;
+  window.searchVideo = APIUtilVideos.searchVideo;
 
 
   ReactDOM.render(<Root store={store} />, root);

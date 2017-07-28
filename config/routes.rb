@@ -9,4 +9,5 @@ Rails.application.routes.draw do
     resources :favorites, only: [:create, :index, :destroy]
     resources :views, only: [:create, :show, :index, :update]
   end
+  get 'api/search', to: "api/videos#search", defaults: {format: :json}
 end

@@ -4,6 +4,7 @@ import SessionFormContainer from './session_form/session_form_container';
 import VideoIndexContainer from './videos/video_index_container';
 import VideoShowContainer from './videos/video_show_container';
 import FavoriteIndexContiner from './favorites/favorite_index_container';
+import SearchContainer from './search/search_container';
 import { AuthRoute, ProtectedRoute, LogoRoute, SplashRoute } from '../util/route_util';
 import {
   Route,
@@ -32,6 +33,7 @@ const App = () => (
   <div id={currentPage()}>
     <header>
       <LogoRoute path="/videos" value="DANCEFLIX" />
+      <ProtectedRoute path="/" component={SearchContainer} />
       <SplashRoute path="/" component={GreetingContainer} />
     </header>
     <Switch>

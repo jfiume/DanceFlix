@@ -24,3 +24,9 @@ export const fetchVideo = id => dispatch => (
     dispatch(receiveVideo(video))
   ))
 );
+
+export const searchVideo = (query) => dispatch => (
+  APIUtil.searchVideo(query).then(videos => (
+    dispatch(receiveVideos(videos))
+  ))
+);

@@ -9,10 +9,10 @@ const VideosReducer = (state = {}, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_VIDEOS:
-      return merge({}, state, action.videos);
+      return Object.assign({}, state, action.videos);
     case RECEIVE_VIDEO:
       const newVideo = {[action.video.id]: action.video};
-      return merge({}, newVideo);
+      return Object.assign({}, newVideo);
     default:
       return state;
   }

@@ -11,3 +11,11 @@ export const fetchVideo = id => (
     url: `/api/videos/${id}`
   })
 );
+
+export const searchVideo = (query) => (
+  $.ajax({
+    method: 'GET',
+    url: 'api/videos',
+    data: { query }
+  })
+);
