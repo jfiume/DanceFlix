@@ -8,3 +8,5 @@ Users will have full control over the video player.
 Several users could use the app at once.
 ## Favorites Playlists
 Users can create a playlist from their favorited videos.
+## Multiple search
+Users can search by multiple search fields.

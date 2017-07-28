@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import VideoIndexItem from '../videos/video_index_item';
+import VideoIndexItemContainer from '../videos/video_index_item';
 
 class FavoriteIndex extends Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class FavoriteIndex extends Component {
         return (
           <section className="all-videos">
             <ul className="videos">
-              {Object.values(favoriteVideos).map(favVid => <VideoIndexItem key={favVid.id} video={favVid} />)}
+              {Object.values(favoriteVideos).map(favVid => <VideoIndexItemContainer key={favVid.id} video={favVid} />)}
             </ul>
           </section>
         );

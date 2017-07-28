@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import VideoIndexItemContainer from '../videos/video_index_item';
 
-class SearchResultsIndex extends Component {
+class ViewsIndex extends Component {
   constructor(props) {
     super(props);
   }
 
   componentDidMount() {
-    this.props.searchVideo();
+    this.props.fetchViewsByUser(this.props.session.currentUser.id);
+    this.props.fetchVideos();
   }
 
 
@@ -31,4 +32,4 @@ class SearchResultsIndex extends Component {
 }
 
 
-export default SearchResultsIndex;
+export default ViewsIndex;

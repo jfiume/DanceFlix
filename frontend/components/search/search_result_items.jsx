@@ -21,9 +21,9 @@ class SearchResultItems extends Component {
 
   render() {
     const {results} = this.props;
-    // console.log(this.props);
     return (
       <form className="search">
+        <label htmlFor="search">Browse:</label>
         <input type="text" value={this.state.val} onChange={this.onChange} />
       </form>
     );

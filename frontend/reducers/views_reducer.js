@@ -10,13 +10,13 @@ const ViewsReducer = (state = {}, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_VIEWS:
-      return merge({}, state, action.views);
+      return merge({}, action.views);
     case RECEIVE_VIEW:
       const newView = {[action.view.id]: action.view};
-      return merge({}, state, newView);
+      return merge({}, newView);
     case ADD_VIEW:
       const count = {[action.view.count]: action.view.count + 1};
-      return merge({}, state, count);
+      return merge({}, count);
     default:
       return state;
   }
