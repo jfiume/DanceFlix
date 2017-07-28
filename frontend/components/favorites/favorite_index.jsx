@@ -20,7 +20,6 @@ class FavoriteIndex extends Component {
   }
 
   render () {
-    console.log(this.props);
     if (Object.keys(this.props.favoriteVideos).length > 0) {
       const { favoriteVideos } = this.props;
       const vidId = Object.values(favoriteVideos).map(fav => fav.id);
