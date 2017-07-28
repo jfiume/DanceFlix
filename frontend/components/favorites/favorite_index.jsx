@@ -12,8 +12,15 @@ class FavoriteIndex extends Component {
     this.props.fetchVideos();
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.favoriteVideos.length !== this.props.favoriteVideos.length) {
+      this.props.fetchFavoritesByUser(this.props.session.currentUser.id);
+      this.props.fetchVideos();
+    }
+  }
 
   render () {
+    console.log(this.props);
     if (Object.keys(this.props.favoriteVideos).length > 0) {
       const { favoriteVideos } = this.props;
       const vidId = Object.values(favoriteVideos).map(fav => fav.id);

@@ -15,6 +15,11 @@ export const receiveView = view => ({
   view
 });
 
+export const addViews = view => ({
+  type: ADD_VIEW,
+  view
+});
+
 
 export const fetchViewsByUser = (userId) => dispatch => (
   APIUtil.fetchViewsByUser(userId).then(views => (
@@ -29,7 +34,7 @@ export const createView = (view) => dispatch => (
 );
 
 export const addView = (view) => dispatch => (
-  APIUtil.addView(view).then(id => (
-    dispatch(fetchVideo(id))
+  APIUtil.addView(view).then(view => (
+    dispatch(addViews(view))
   ))
 );

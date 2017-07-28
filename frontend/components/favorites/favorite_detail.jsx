@@ -25,7 +25,11 @@ class FavoriteDetail extends Component {
 
   toggleFavs() {
     if (this.props.favorite) {
-      return '💔';
+      if (this.props.favorite.user_id === this.props.session.currentUser.id) {
+        return '💔';
+      } else {
+        return '❤️';
+      }
     } else {
       return '❤️';
     }
