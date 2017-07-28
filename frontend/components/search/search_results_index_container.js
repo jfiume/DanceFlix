@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { searchVideo } from '../../actions/video_actions';
-import SearchResultsIndex from './search_result_items';
+import SearchResultsIndex from './search_results_index';
 import values from 'lodash/values';
 
 const mapStateToProps = ({videos}) => ({

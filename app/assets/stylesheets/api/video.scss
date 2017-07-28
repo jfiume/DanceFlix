@@ -68,3 +68,25 @@
 .toggle-favorite {
   visibility: hidden;
 }
+
+.search ul {
+  color: white;
+}
+
+.search {
+  position: absolute;
+  margin-top: 5px;
+  top: 0%;
+  left: 20%;
+  display: inline;
+}
+
+.search button {
+  color: white;
+  background-color: red;
+  font-size: 1.1em;
+}
+
+.search input {
+  font-size: 1.1em;
+}

@@ -33,9 +33,10 @@ class SearchResultItems extends Component {
     const {results} = this.props;
     // console.log(this.props);
     return (
-      <form onSubmit={this.onSubmit}>
-        <input type="text" value={this.state.val} onChange={this.onChange} type="submit" />
-        <Results results={results}/>
+      <form className="search">
+        <input type="text" value={this.state.val} onChange={this.onChange} />
+        <button onClick={this.onSubmit}>Search</button>
+        <Results results={this.state.val} />
       </form>
     );
   }
