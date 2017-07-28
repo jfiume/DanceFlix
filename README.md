@@ -32,43 +32,43 @@ https://github.com/jfiume/DanceFlix/blob/master/docs/file_storage.md
 The following code snippet provides for me to set a different id for each page which allows for a different background image on each page of a single-page web app.
 
 
-const currentPage = () => {
-  const page = window.location.hash.slice(2);
-  if (page === "") {
-    return (
-      "splash"
-    );
-  } else {
-    return (
-      page
-    );
-  }
-};
+    const currentPage = () => {
+      const page = window.location.hash.slice(2);
+      if (page === "") {
+        return (
+          "splash"
+        );
+      } else {
+        return (
+          page
+        );
+      }
+    };
 
-const App = () => (
-  <div id={currentPage()}>
-  ...
-)
+    const App = () => (
+      <div id={currentPage()}>
+      ...
+    )
 
 The following code snippet loads the video from YouTube.
 
-render()
-{
-  if (this.props.videoId === parseInt(this.props.match.params.id))
+  render()
   {
-    const video = this.props.currentVideo;
+    if (this.props.videoId === parseInt(this.props.match.params.id))
+    {
+      const video = this.props.currentVideo;
 
     return (
       <iframe className="current-video"
        src={video.video_url}
         frameBorder="0"
          allowFullScreen></iframe>
-    );
-  } else {
-    ...
-    );
+      );
+    } else {
+      ...
+      );
+    }
   }
-}
 
 ## Future Implementations
 
