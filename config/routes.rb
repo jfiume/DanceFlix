@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     resources :videos, only: [:index, :show]
     resources :favorites, only: [:create, :index, :destroy]
-    resources :views, only: [:create, :show, :index, :update]
+    resources :views, only: [:create, :show, :index]
   end
   get 'api/search', to: "api/videos#search", defaults: {format: :json}
 end

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import VideoIndexItemContainer from '../videos/video_index_item';
+import VideoIndexItemContainer from '../videos/video_index_item_container';
 
 class SearchResultsIndex extends Component {
   constructor(props) {

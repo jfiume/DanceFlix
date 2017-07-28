@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import VideoIndexItemContainer from './video_index_item';
+import VideoIndexItemContainer from './video_index_item_container';
 
 class VideoIndex extends Component {
   constructor(props) {

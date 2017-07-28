@@ -12,7 +12,6 @@ const mapStateToProps = ({session}, ownProps) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     createView: (view) => dispatch(createView(view)),
-    addView: (view) => dispatch(addView(view))
   };
 };
 

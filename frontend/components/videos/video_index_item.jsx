@@ -9,10 +9,9 @@ class VideoIndexItem extends Component {
   }
 
   onClick(e) {
-    e.preventDefault;
+    e.preventDefault();
     return (
-      this.props.addView({user_id: this.props.session.currentUser.id,
-        video_id: this.props.video.id})
+      this.props.createView({video_id: this.props.video.id})
     );
   }
 

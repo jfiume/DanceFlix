@@ -13,10 +13,3 @@ export const createView = (view) => (
     data: { view }
   })
 );
-
-export const addView = (id) => (
-  $.ajax({
-    method: 'PATCH',
-    url: `api/views/${id}`,
-  })
-);

@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import FavoriteIndex from './favorite_index';
 import { fetchVideos } from '../../actions/video_actions';
 import { favVideos } from '../../reducers/selectors';
+import { withRouter } from 'react-router-dom';
 import {
   receiveFavorites,
   fetchFavoritesByUser,
@@ -21,7 +22,7 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(
+export default withRouter( connect(
   mapStateToProps,
   mapDispatchToProps
-)(FavoriteIndex);
+)(FavoriteIndex));

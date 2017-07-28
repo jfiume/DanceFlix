@@ -3,11 +3,11 @@ import values from 'lodash/values';
 import ViewsIndex from './views_index';
 import { fetchVideos } from '../../actions/video_actions';
 import { fetchViewsByUser } from '../../actions/view_actions';
+import { sortByMostViewed } from '../../reducers/selectors';
 
-const mapStateToProps = ({videos, session}) => ({
-  videos,
+const mapStateToProps = ({videos, session, views}) => ({
+  results: sortByMostViewed(videos, views),
   session,
-  results: values(videos)
 });
 
 const mapDispatchToProps = dispatch => ({
