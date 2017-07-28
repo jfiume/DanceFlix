@@ -1,24 +1,29 @@
-# README
+# DanceFlix
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+DanceFlix is a web application for users to stream dance videos. Inspired by Netflix, DanceFlix allows users to watch, favorite,  and search for their best-loved dance videos of all time.
 
-Things you may want to cover:
+DanceFlix is a personal project by Joseph Fiume.
 
-* Ruby version
+https://danceflix.herokuapp.com/
 
-* System dependencies
+## Features
 
-* Configuration
+- User accounts with secure authentication
+- Video streaming with controls and no interruption
+- User can favorite their preferred videos
+- User can search for a video by title, genre, and year.
 
-* Database creation
 
-* Database initialization
+## Project Design
 
-* How to run the test suite
+DanceFlix was designed and built in 2 weeks.
 
-* Services (job queues, cache servers, search engines, etc.)
+A proposal was drafted to help provide an implementation timeline for the development process along with a database schema.
 
-* Deployment instructions
+## Technology
 
-* ...
+DanceFlix is a single-page web application built on a Rails backend and a React frontend.
+
+## Future Implementations
+
+DanceFlix could be improved with the addition of a few future implementations.
