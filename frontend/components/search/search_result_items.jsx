@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {SearchResultsIndex} from './search_results_index';
 
 class SearchResultItems extends Component {
   constructor(props) {
@@ -8,7 +9,7 @@ class SearchResultItems extends Component {
       val: ""
     };
     this.onChange = this.onChange.bind(this);
-
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
   onChange(e) {
@@ -19,12 +20,20 @@ class SearchResultItems extends Component {
     });
   }
 
+  onSubmit(e) {
+    e.preventDefault;
+    const {results} = this.props;
+    return (
+    <SearchResultsContainer results={results}/>
+    );
+  }
+
   render() {
     const {results} = this.props;
-    console.log(this.props);
+    // console.log(this.props);
     return (
       <div>
-        <input type="text" value={this.state.val} onChange={this.onChange} />
+        <input type="text" value={this.state.val} onChange={this.onChange} onSubmit={this.onSubmit} />
         <Results results={results}/>
       </div>
     );
