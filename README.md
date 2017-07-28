@@ -10,9 +10,15 @@ https://danceflix.herokuapp.com/
 ## Features
 
 - User accounts with secure authentication
+  - full backend and frontend secure user authentication
 - Video streaming with controls and no interruption
+  - full video streaming from YouTube
 - User can favorite their preferred videos
+  -favorites appear on the Favorites Page
 - User can search for a video by title.
+  - search is responsive, loading only the videos that match instantly
+- User can view their most viewed videos
+  - Most Viewed page, with the videos sorted by view count
 
 
 ## Project Design
@@ -24,9 +30,9 @@ A proposal was drafted to help provide an implementation timeline for the develo
 ## Technology
 
 DanceFlix is a single-page web application built on a Rails backend and a React frontend.
-https://github.com/jfiume/DanceFlix/blob/master/docs/backend.md
-https://github.com/jfiume/DanceFlix/blob/master/docs/frontend.md
-https://github.com/jfiume/DanceFlix/blob/master/docs/file_storage.md
+[backend](https://github.com/jfiume/DanceFlix/blob/master/docs/backend.md)
+[frontend](https://github.com/jfiume/DanceFlix/blob/master/docs/frontend.md)
+[file storage](https://github.com/jfiume/DanceFlix/blob/master/docs/file_storage.md)
 
 ## Code snippets
 The following code snippet provides for me to set a different id for each page which allows for a different background image on each page of a single-page web app.
@@ -73,6 +79,6 @@ The following code snippet loads the video from YouTube.
 ## Future Implementations
 
 DanceFlix could be improved with the addition of a few future implementations.
-https://github.com/jfiume/DanceFlix/blob/master/docs/future.md
+[Future Development](https://github.com/jfiume/DanceFlix/blob/master/docs/future.md)
 
 <img src="http://res.cloudinary.com/pancake/image/upload/v1501268835/Screen_Shot_2017-07-28_at_11.29.06_AM_x486qb.png">
