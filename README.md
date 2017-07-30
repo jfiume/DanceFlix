@@ -4,7 +4,7 @@ DanceFlix is a web application for users to stream dance videos. Inspired by Net
 
 DanceFlix is a personal project by Joseph Fiume.
 
-[DanceFlix]https://danceflix.herokuapp.com/
+[DanceFlix](https://danceflix.herokuapp.com/)
 <img src="http://res.cloudinary.com/pancake/image/upload/v1501268835/Screen_Shot_2017-07-28_at_11.28.37_AM_p6ofmv.png">
 
 ## Features
