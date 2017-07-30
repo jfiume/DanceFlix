@@ -4,7 +4,7 @@ DanceFlix is a web application for users to stream dance videos. Inspired by Net
 
 DanceFlix is a personal project by Joseph Fiume.
 
-https://danceflix.herokuapp.com/
+[DanceFlix]https://danceflix.herokuapp.com/
 <img src="http://res.cloudinary.com/pancake/image/upload/v1501268835/Screen_Shot_2017-07-28_at_11.28.37_AM_p6ofmv.png">
 
 ## Features
@@ -30,14 +30,16 @@ A proposal was drafted to help provide an implementation timeline for the develo
 ## Technology
 
 DanceFlix is a single-page web application built on a Rails backend and a React frontend.
-[backend](https://github.com/jfiume/DanceFlix/blob/master/docs/backend.md)
-[frontend](https://github.com/jfiume/DanceFlix/blob/master/docs/frontend.md)
-[file storage](https://github.com/jfiume/DanceFlix/blob/master/docs/file_storage.md)
+[Backend](https://github.com/jfiume/DanceFlix/blob/master/docs/backend.md)
+
+[Frontend](https://github.com/jfiume/DanceFlix/blob/master/docs/frontend.md)
+
+[File Storage](https://github.com/jfiume/DanceFlix/blob/master/docs/file_storage.md)
 
 ## Code snippets
 The following code snippet provides for me to set a different id for each page which allows for a different background image on each page of a single-page web app.
 
-
+```javascript
     const currentPage = () => {
       const page = window.location.hash.slice(2);
       if (page === "") {
@@ -55,9 +57,11 @@ The following code snippet provides for me to set a different id for each page w
       <div id={currentPage()}>
       ...
     )
+...
 
 The following code snippet loads the video from YouTube.
 
+```javascript
   render()
   {
     if (this.props.videoId === parseInt(this.props.match.params.id))
@@ -75,6 +79,7 @@ The following code snippet loads the video from YouTube.
       );
     }
   }
+...
 
 ## Future Implementations
 
