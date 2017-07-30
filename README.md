@@ -30,6 +30,7 @@ A proposal was drafted to help provide an implementation timeline for the develo
 ## Technology
 
 DanceFlix is a single-page web application built on a Rails backend and a React frontend.
+
 [Backend](https://github.com/jfiume/DanceFlix/blob/master/docs/backend.md)
 
 [Frontend](https://github.com/jfiume/DanceFlix/blob/master/docs/frontend.md)
