@@ -59,6 +59,7 @@ The following code snippet provides for me to set a different id for each page w
       ...
     )
 ...
+```
 
 The following code snippet loads the video from YouTube.
 
@@ -81,7 +82,7 @@ The following code snippet loads the video from YouTube.
     }
   }
 ...
-
+```
 
 ## Future Implementations
 
