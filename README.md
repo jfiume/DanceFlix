@@ -82,6 +82,7 @@ The following code snippet loads the video from YouTube.
   }
 ...
 
+
 ## Future Implementations
 
 DanceFlix could be improved with the addition of a few future implementations.
