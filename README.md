@@ -14,7 +14,7 @@ DanceFlix is a personal project by Joseph Fiume.
 - Video streaming with controls and no interruption
   - full video streaming from YouTube
 - User can favorite their preferred videos
-  -favorites appear on the Favorites Page
+  - favorites appear on the Favorites Page
 - User can search for a video by title.
   - search is responsive, loading only the videos that match instantly
 - User can view their most viewed videos
