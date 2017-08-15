@@ -37,7 +37,7 @@ Phase 5: Allow Complex Styling in Home Page (1 day )
 
 Objective: Videos will have to be playable from the homepage and the view page.
 
-Phase 6: - Browse Feature (1 day )
+Phase 6: - Browse/Search Feature (1 day )
 
 Objective: Add a search-bar feature to search for videos by name
 
