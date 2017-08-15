@@ -1,10 +1,10 @@
 # Backend
 
-DanceFlix runs on Ruby on Rails and is hosted on Heroku. The sole purpose of the backend is to provide RESTful APIs and respond with JSON data.
+DanceFlix runs on Ruby on Rails and is hosted on Heroku. The backend provides RESTful APIs and responds with JSON data.
 
 ## Heroku
 
-BinaryCanary application performance management (APM) is used to automatically ping the Heroku dyno, keeping it awake for faster client response.
+BinaryCanary application performance management (APM) pings the Heroku dyno, keeping it awake for faster user response.
 
 ## Database
 
