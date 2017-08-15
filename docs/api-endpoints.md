@@ -31,9 +31,3 @@ DELETE /api/favorites/:id
 Views
 
 POST /api/views/:id
-
-Playlists
-
-GET /api/playlists
-POST /api/playlists
-DELETE /api/playlists/:id
