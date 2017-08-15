@@ -8,7 +8,7 @@ BinaryCanary application performance management (APM) is used to automatically p
 
 ## Database
 
-PostgreSQL RDBMS is a must for Heroku.
+PostgreSQL works very well with Heroku.
 
 ## Dependencies
 
