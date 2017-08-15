@@ -14,7 +14,7 @@ Webpack conveniently bundles all of the frontend components and Flux parts. The 
 
 ## React & Flux
 
-All of the React components, Flux action creators, API utilities, dispatcher, and stores are located in the [frontend](../frontend) directory.
+All the React components, Flux action creators, API utilities, dispatcher, and stores are located in the [frontend](../frontend) directory.
 
 ## jQuery
 
@@ -22,7 +22,7 @@ jQuery is only used to make AJAX requests with the Rails server.
 
 ## Bootstrap & Sass
 
-Site layout and styling are done with Bootstrap and Sass. React Bootstrap expedited the building out of the React components that utilized Bootstrap.
+Site layout and styling are done only with the use of CSS.
 
 ## Others
 
