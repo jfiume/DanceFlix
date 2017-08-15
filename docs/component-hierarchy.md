@@ -13,7 +13,7 @@ WelcomeContainer
 NavBar
 Footer
 
-BrowseContainer
+SearchContainer
 
 NavBar
 Search
@@ -59,10 +59,9 @@ Path	                      | Component
 "welcome/sign-up"	          | "AuthFormContainer"
 "welcome/sign-in"	          | "AuthFormContainer"
 "/member/:memberId"	        | "MemberContainer"
-"/browse"	                  | "BrowseContainer"
-"/browse/genre/:genreId"	  | "GenreContainer"
+"/search"	                  | "SearchContainer"
+"/search/genre/:genreId"	  | "SearcgContainer"
 "/search"	                  | "SearchResultsContainer"
-"/watch/:videoId"	          | "VideoContainer"
+"/videos/:videoId"	        | "VideoContainer"
 "/favorites"                | "FavoritesContainer"
 "/views/:videoId"           | "ViewsContainer"
-"/playlists"                | "PlaylistsContainer"
