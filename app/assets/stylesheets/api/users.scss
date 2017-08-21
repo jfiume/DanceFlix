@@ -42,6 +42,10 @@ body {
   height: 100%;
 }
 
+#splash .search {
+  visibility: hidden;
+}
+
 header {
   opacity: .9;
   z-index: 1;
@@ -61,6 +65,14 @@ header {
   font-size: 3em;
 }
 
+.logo-tag {
+  text-decoration: none;
+  color: red;
+  margin-left: 5%;
+  margin-top: 0%;
+  font-size: 1.5em;
+}
+
 .login-signup {
   font-size: 1.5em;
 }
@@ -72,6 +84,21 @@ header {
   float: right;
   top: -10%;
   right: 2%;
+  margin: -5px 5px 5px 0px;
+  font-weight: lighter;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 2%;
+}
+
+.home {
+  color: white;
+  background-color: red;
+  position: absolute;
+  float: right;
+  top: 0%;
+  right: 15%;
   margin: -5px 5px 5px 0px;
   font-weight: lighter;
   text-decoration: none;

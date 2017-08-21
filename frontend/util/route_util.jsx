@@ -31,7 +31,10 @@ const Protected = ({component: Component, path, loggedIn}) => (
 const Logo = ({component: path, loggedIn, value}) => (
   <Route path={path} render={() => (
       loggedIn? (
-        <Link className="logo" to="/videos">{value}</Link>
+        <div>
+          <Link className="logo" to="/videos">{value}</Link>
+          <h2 className="logo-tag">Watch All Your Favorite Dance Videos</h2>
+        </div>
       ) : (
         <Link className="logo" to="/">{value}</Link>
         )
@@ -39,10 +42,10 @@ const Logo = ({component: path, loggedIn, value}) => (
 );
 
 
-const Splash = ({component: Component, path, loggedIn}) => (
+const Splash = ({path, loggedIn}) => (
   <Route path={path} render={(props) => (
       loggedIn ? (
-        <Component {...props} />
+        <Link className="home" to="/videos">Home</Link>
         ) : (
         <Link className="login" to="/login">Sign In</Link>
         )

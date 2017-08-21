@@ -23,7 +23,7 @@
     visibility: visible;
     position: fixed;
     float: left;
-    top: 50%;
+    top: 75%;
     left: 0%;
   }
   .toggle-favorite {
@@ -43,7 +43,7 @@
 .attributes {
   visibility: hidden;
 }
-.attributes p, span {
+.attributes p {
   text-align: justify;
   font-size: .8em;
   list-style: none;

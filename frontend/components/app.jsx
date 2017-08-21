@@ -34,8 +34,9 @@ const App = () => (
   <div id={currentPage()}>
     <header>
       <LogoRoute path="/videos" value="DANCEFLIX" />
+      <ProtectedRoute path="/" component={GreetingContainer} />
       <ProtectedRoute path="/" component={SearchContainer} />
-      <SplashRoute path="/" component={GreetingContainer} />
+      <SplashRoute exact path="/" />
     </header>
     <Switch>
       <AuthRoute path="/login" component={SessionFormContainer} />
@@ -44,7 +45,6 @@ const App = () => (
       <ProtectedRoute path="/videos/:id" component={VideoShowContainer} />
       <ProtectedRoute path="/favorites" component={FavoriteIndexContainer} />
       <ProtectedRoute path="/views" component={ViewsIndexContainer} />
-      <Route component={GreetingContainer} />
     </Switch>
   </div>
 );

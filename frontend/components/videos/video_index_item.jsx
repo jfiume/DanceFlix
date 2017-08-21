@@ -23,8 +23,6 @@ class VideoIndexItem extends Component {
           <img src={video.image_url} alt={video.title} />
           <article className="attributes">
             <p>{video.title}</p>
-            <p>{video.year}</p>
-            <p>{video.description}</p>
           </article>
         </Link>
         <FavoriteDetailContainer videoId={video.id} favorite={video.favorites[0]}/>

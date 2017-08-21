@@ -17,7 +17,7 @@ video1 = Video.create(
   video_url: 'https://www.youtube.com/embed/dk-nWE9yeG8',
   image_url: "http://res.cloudinary.com/pancake/image/upload/c_thumb,h_160,w_280/v1501040744/maxresdefault_u1awe3.jpg",
   description: "The final paso doble from Strictly Ballroom",
-  title: "Paso Doble",
+  title: "Paso Doble Strictly Ballroom",
   genre: "Paso Doble",
   year: 1993
 )
@@ -72,7 +72,7 @@ video_url: "https://www.youtube.com/embed/l9BbUqHrWFI",
 image_url: "http://res.cloudinary.com/pancake/image/upload/c_thumb,h_160,w_280/v1501040741/maxresdefault-5_ekegtz.jpg",
 description: "End of season at Kellermans
 nobody puts Baby in the corner (I've Had) The Time of My Life",
-title: "Time of My Life",
+title: "Time of My Life Dirty Dancing",
 genre: "Salsa",
 year: 1987
 )
