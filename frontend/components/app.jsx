@@ -6,7 +6,7 @@ import VideoShowContainer from './videos/video_show_container';
 import FavoriteIndexContainer from './favorites/favorite_index_container';
 import SearchContainer from './search/search_container';
 import ViewsIndexContainer from './views/views_index_container';
-import { AuthRoute, ProtectedRoute, LogoRoute, SplashRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute, LogoRoute, SplashRoute, SplashVideoRoute } from '../util/route_util';
 import {
   Route,
   Redirect,
@@ -45,6 +45,7 @@ const App = () => (
       <ProtectedRoute path="/videos/:id" component={VideoShowContainer} />
       <ProtectedRoute path="/favorites" component={FavoriteIndexContainer} />
       <ProtectedRoute path="/views" component={ViewsIndexContainer} />
+      <SplashVideoRoute exact path="/" />
     </Switch>
   </div>
 );

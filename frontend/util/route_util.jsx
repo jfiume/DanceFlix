@@ -52,7 +52,15 @@ const Splash = ({path, loggedIn}) => (
       )} />
 );
 
-
+const SplashVideo = ({path, loggedIn}) => (
+  <Route path={path} render={(props) => (
+      loggedIn ? (
+        <iframe className="spash-video" src="https://www.youtube.com/embed/SKDnPGD8CIw" frameBorder="0"></iframe>
+        ) : (
+        <Link className="login" to="/login">Sign In</Link>
+        )
+      )} />
+);
 
 const mapStateToProps = state => {
   return {loggedIn: Boolean(state.session.currentUser)};
@@ -65,3 +73,5 @@ export const ProtectedRoute = withRouter(connect(mapStateToProps, null)(Protecte
 export const LogoRoute = withRouter(connect(mapStateToProps, null)(Logo));
 
 export const SplashRoute = withRouter(connect(mapStateToProps, null)(Splash));
+
+export const SplashVideoRoute = withRouter(connect(mapStateToProps, null)(SplashVideo));
