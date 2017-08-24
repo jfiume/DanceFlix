@@ -1,5 +1,5 @@
 #splash {
-  background-image: url("http://res.cloudinary.com/pancake/image/upload/v1500912434/default_path_background_woar7i.jpg");
+  // background-image: url("http://res.cloudinary.com/pancake/image/upload/v1500912434/default_path_background_woar7i.jpg");
   position: absolute;
   top: 0%;
   left: 0%;
@@ -34,7 +34,17 @@
   margin-left: 5%;
 }
 
-.splash-video {
-  height: 6000px;
-  width: 1000px;
+#splash iframe {
+  margin: 10%;
+  height: 600px;
+  width: 80%;
+}
+
+#splash h1 {
+  color: red;
+  font-size: 1.5em;
+  position: absolute;
+  float: left;
+  top: 20%;
+  left: 10%;
 }

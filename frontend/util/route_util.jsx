@@ -23,7 +23,7 @@ const Protected = ({component: Component, path, loggedIn}) => (
       loggedIn? (
         <Component {...props} />
       ) : (
-        <Redirect to="/login" />
+        <Redirect to="/" />
       )
     )} />
 );
@@ -54,11 +54,10 @@ const Splash = ({path, loggedIn}) => (
 
 const SplashVideo = ({path, loggedIn}) => (
   <Route path={path} render={(props) => (
-      loggedIn ? (
-        <iframe className="spash-video" src="https://www.youtube.com/embed/SKDnPGD8CIw" frameBorder="0"></iframe>
-        ) : (
-        <Link className="login" to="/login">Sign In</Link>
-        )
+      <div className="splash-video" >
+        <h1>Watch La La Land now on DANCEFLIX</h1>
+        <iframe src="https://www.youtube.com/embed/SKDnPGD8CIw?autoplay=1" frameBorder="0"></iframe>
+      </div>
       )} />
 );
 
