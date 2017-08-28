@@ -21,7 +21,7 @@ const personalGreeting = (currentUser, logout) => {
         <p><Link className="dropdown-links" to="/favorites">Favorites</Link></p>
         <p><Link className="dropdown-links" to="/videos">All Videos</Link></p>
         <p><Link className="dropdown-links" to="/views">Most Viewed</Link></p>
-        <p><Link className="logout" to="/" onClick={logout}>Sign out of DanceFlix</Link></p>
+        <p><Link className="logout" to="/" onClick={logout}>Sign Out</Link></p>
       </nav>
     </hgroup>
   );
