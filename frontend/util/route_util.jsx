@@ -56,7 +56,7 @@ const SplashVideo = ({path, loggedIn}) => (
   <Route path={path} render={(props) => (
       <div className="splash-video" >
         <h1>Watch La La Land now on DANCEFLIX</h1>
-        <iframe src="https://www.youtube.com/embed/SKDnPGD8CIw?autoplay=1" frameBorder="0"></iframe>
+        <iframe src="https://www.youtube.com/embed/SKDnPGD8CIw" frameBorder="0"></iframe>
       </div>
       )} />
 );
