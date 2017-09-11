@@ -30,7 +30,7 @@ class Api::VideosController < ApplicationController
 
   def search_by_title
     title = params[:query][:title].downcase
-    @videos = Video.where("lower(genre) LIKE ?", "%#{title}%")
+    @videos = Video.where("lower(title) LIKE ?", "%#{title}%")
     render "api/videos/index"
   end
 
