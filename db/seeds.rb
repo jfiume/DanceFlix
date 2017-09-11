@@ -24,7 +24,7 @@ video1 = Video.create(
 
 video2 = Video.create(
   video_url: "https://www.youtube.com/embed/16EuniBuiz0",
-  image_url: "https://res.cloudinary.com/pancake/image/upload/c_scale,h_160,w_280/v1504227523/so-you-think-you-can-dance_oun8eh.png",
+  image_url: "https://res.cloudinary.com/pancake/image/upload/c_scale,h_160,w_280/v1505098463/heidi-groskreutz-and-benji-schwimmer-of-so-you-think-you-can-dance.jpg",
   description: "They do a human cartwheel!",
   title: "West Cost Swing for the win",
   genre: "West Cost Swing",
@@ -51,7 +51,7 @@ year: "2013"
 
 video5 = Video.create(
 video_url: "https://www.youtube.com/embed/SKDnPGD8CIw",
-image_url: "https://res.cloudinary.com/pancake/image/upload/c_thumb,h_160,w_280/v1501040754/maxresdefault-3_kkamjo.jpg",
+image_url: "https://res.cloudinary.com/pancake/image/upload/c_scale,h_160,w_280/v1504227165/la-la-land_y5foik.png",
 description: "La La Land - A Lovely Night",
 title: "La La Land - A Lovely Night",
 genre: "Jazz",
@@ -89,7 +89,7 @@ year: 1984
 
 video9 = Video.create(
 video_url: "https://www.youtube.com/embed/7oKPYe53h78",
-image_url: "https://res.cloudinary.com/pancake/image/upload/c_thumb,h_160,w_280/v1501040763/mqdefault_ylbug7.jpg",
+image_url: "https://res.cloudinary.com/pancake/image/upload/c_scale,h_160,w_280/v1504227349/grease_rcvhzo.png",
 description: "Grease is the word",
 title: "Grease - You're the one that I want",
 genre: "grease lightening",

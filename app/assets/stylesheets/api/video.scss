@@ -3,12 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .videos {
+  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .video-index-item {
@@ -23,8 +22,9 @@
     visibility: visible;
     position: fixed;
     float: left;
-    top: 75%;
+    top: 70%;
     left: 0%;
+    margin: 10px;
   }
   .toggle-favorite {
     visibility: visible;
@@ -77,7 +77,7 @@
   position: absolute;
   margin-top: 5px;
   top: 0%;
-  left: 25%;
+  left: 40%;
   display: inline;
 }
 

@@ -9,7 +9,6 @@ body {
 
 #videos {
   background-color: #141414;
-  text-align: center;
 }
 
 #favorites {
@@ -107,6 +106,10 @@ header {
   font-weight: lighter;
 }
 
+#drop-favorites:hover, #drop-videos:hover, #drop-views:hover, #drop-logout:hover {
+  color: red;
+}
+
 .dropdown {
     position: absolute;
     top: 0%;
@@ -116,6 +119,7 @@ header {
     cursor: context-menu;
     margin: 0%;
     width: 15%;
+    line-height: 1.5em;
 }
 
 .dropdown span {
