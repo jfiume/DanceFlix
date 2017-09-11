@@ -24,7 +24,7 @@ class SearchResultItems extends Component {
     return (
       <form className="search">
         <label htmlFor="search">Browse:</label>
-        <input type="text" value={this.state.val} onChange={this.onChange} />
+        <input type="text" value={this.state.val} onChange={this.onChange}/>
       </form>
     );
   }

@@ -36,7 +36,10 @@ const Logo = ({component: path, loggedIn, value}) => (
           <h2 className="logo-tag">Watch All Your Favorite Dance Videos</h2>
         </div>
       ) : (
-        <Link className="logo" to="/">{value}</Link>
+        <div>
+          <Link className="logo" to="/">{value}</Link>
+          <h2 className="logo-tag">Watch All Your Favorite Dance Videos</h2>
+        </div>
         )
     )}/>
 );
