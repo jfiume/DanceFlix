@@ -59,13 +59,8 @@ const SplashVideo = ({path, loggedIn}) => (
   <Route path={path} render={(props) => (
       <div className="splash-video" >
         <h1>Watch La La Land now on DANCEFLIX</h1>
-          <iframe src="https://www.youtube.com/embed/SKDnPGD8CIw?rel=0&showinfo=0&modestbrading=1&iv_load_policy=3&showsearch=0"
-          frameBorder="0"
-          allowfullscreen="allowfullscreen"
-          mozallowfullscreen="mozallowfullscreen"
-          msallowfullscreen="msallowfullscreen"
-          oallowfullscreen="oallowfullscreen"
-          webkitallowfullscreen="webkitallowfullscreen">
+        <iframe
+          src="https://www.youtube.com/embed/waTDxRZ93Qc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen>
         </iframe>
       </div>
       )} />
