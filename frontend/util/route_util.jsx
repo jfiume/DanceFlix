@@ -60,7 +60,7 @@ const SplashVideo = ({path, loggedIn}) => (
       <div className="splash-video" >
         <h1>Watch La La Land now on DANCEFLIX</h1>
         <iframe
-          src="https://www.youtube.com/embed/waTDxRZ93Qc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen>
+          src="https://www.youtube.com/embed/waTDxRZ93Qc?rel=0&amp;showinfo=0">
         </iframe>
       </div>
       )} />

@@ -16,7 +16,7 @@ const personalGreeting = (currentUser, logout) => {
     currentUser.username.slice(0, currentUser.username.indexOf("@")) :
       currentUser.username;
   return (
-    <hgroup className="dropdown"><img src="http://res.cloudinary.com/pancake/image/upload/v1501112677/PICON_026_tvd3pr.png"></img><span>{name}</span>
+    <hgroup className="dropdown"><img src="https://res.cloudinary.com/pancake/image/upload/v1501112677/PICON_026_tvd3pr.png"></img><span>{name}</span>
       <nav className="dropdown-content">
         <p><Link id="drop-favorites" className="dropdown-links" to="/favorites">Favorites</Link></p>
         <p><Link id="drop-videos" className="dropdown-links" to="/videos">All Videos</Link></p>
