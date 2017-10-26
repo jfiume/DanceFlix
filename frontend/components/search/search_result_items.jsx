@@ -9,10 +9,10 @@ class SearchResultItems extends Component {
       type: "title",
       val: ""
     };
-    this.onChange = this.onChange.bind(this);
+    this.onChangeVal = this.onChangeVal.bind(this);
   }
 
-  onChange(e) {
+  onChangeVal(e) {
     e.preventDefault;
     this.setState({val: e.target.value}, () => {
       this.props.searchVideo({[this.state.type]: this.state.val});
@@ -24,7 +24,7 @@ class SearchResultItems extends Component {
     return (
       <form className="search">
         <label htmlFor="search">Browse:</label>
-        <input type="text" value={this.state.val} onChange={this.onChange}/>
+        <input type="text" value={this.state.val} onChange={this.onChangeVal}/>
       </form>
     );
   }

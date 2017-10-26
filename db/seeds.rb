@@ -231,6 +231,15 @@ video24 = Video.create(
   year: 1978
 )
 
+video25 = Video.create(
+  video_url: "https://www.youtube.com/embed/TcWPiHjIExA?rel=0&amp;showinfo=0",
+  image_url: "https://res.cloudinary.com/pancake/image/upload/c_scale,h_160,w_280/v1508986480/napolean_dynomite.png",
+  description: "In small-town Preston, Idaho, awkward teen Napoleon Dynamite (Jon Heder) has trouble fitting in. After his grandmother is injured in an accident, his life is made even worse when his strangely nostalgic uncle, Rico (Jon Gries), shows up to keep an eye on him. With no safe haven at home or at school, Napoleon befriends the new kid, Pedro (Efren Ramirez), a morose Hispanic boy who speaks little English. Together the two launch a campaign to run for class president.",
+  title: "Napolean Dynomite",
+  genre: "Napolean Dynomite",
+  year: "2004"
+)
+
 Favorite.destroy_all
 favorite1 = Favorite.create(user_id: demo_user.id, video_id: video1.id)
 favorite2 = Favorite.create(user_id: demo_user.id, video_id: video2.id)
