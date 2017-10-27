@@ -6,7 +6,7 @@ class SearchResultItems extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      type: "",
+      type: "title",
       val: ""
     };
     this.onChangeVal = this.onChangeVal.bind(this);
@@ -22,7 +22,6 @@ class SearchResultItems extends Component {
 
   onSelectType(e) {
     e.preventDefault;
-    console.log(e);
     this.setState({type: e.target.value});
   }
 
@@ -30,13 +29,13 @@ class SearchResultItems extends Component {
     const {results} = this.props;
     return (
       <form className="search">
-      <label htmlFor="search">Browse:</label>
-      <input type="text" value={this.state.val} onChange={this.onChangeVal}/>
-      <select name="search-type"  onChange={this.onSelectType}>
-      <option value="title">title</option>
-      <option value="genre">genre</option>
-      <option value="year">year</option>
-      </select>
+        <label htmlFor="search">Browse:</label>
+        <input type="text" value={this.state.val} onChange={this.onChangeVal}/>
+          <select name="search-type" onChange={this.onSelectType}>
+            <option value="title">title</option>
+            <option value="genre">genre</option>
+            <option value="year">year</option>
+          </select>
       </form>
     );
   }

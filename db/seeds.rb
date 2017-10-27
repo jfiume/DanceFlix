@@ -46,7 +46,7 @@ image_url: "https://res.cloudinary.com/pancake/image/upload/c_scale,h_160,w_280/
 description: "Derek Hough Dancing with the Macy's Stars of Dance-Jaimie Goodwin.",
 title: "Moving Room Dance",
 genre: "Ballroom",
-year: "2013"
+year: 2013
 )
 
 video5 = Video.create(
@@ -237,7 +237,7 @@ video25 = Video.create(
   description: "In small-town Preston, Idaho, awkward teen Napoleon Dynamite (Jon Heder) has trouble fitting in. After his grandmother is injured in an accident, his life is made even worse when his strangely nostalgic uncle, Rico (Jon Gries), shows up to keep an eye on him. With no safe haven at home or at school, Napoleon befriends the new kid, Pedro (Efren Ramirez), a morose Hispanic boy who speaks little English. Together the two launch a campaign to run for class president.",
   title: "Napolean Dynomite",
   genre: "Napolean Dynomite",
-  year: "2004"
+  year: 2004
 )
 
 Favorite.destroy_all
