@@ -2,97 +2,111 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .videos {
   justify-content: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 5%;
+  display: block;
+  margin-top: 20%;
   margin: 2%;
 }
 
-.video-index-item {
-  margin: 0px -10px -10px 0px;
-  padding: 0px;
-}
-
-.video-index-item:hover {
-  transform: rotate(0deg) scale(1.6, 1.8) skew(0deg) translate(0px, 0px);
-  -webkit-animation: translate(20px, 0px) scale(1.6, 1.8);
-  .attributes {
-    visibility: visible;
-    position: fixed;
-    float: left;
-    top: 70%;
-    left: 0%;
-    margin: 10px;
-  }
-  .toggle-favorite {
-    visibility: visible;
-    position: fixed;
-    float: right;
-    top: 45%;
-    right: 2%;
-    padding: 0px;
-    margin: 0px;
-    background: transparent;
-    border: none;
-    font-size: 2.5em;
-  }
-}
-
-.attributes {
-  visibility: hidden;
-}
-.attributes p {
-  text-align: justify;
-  font-size: .8em;
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  margin: 0px;
-  padding: 0px;
-  word-break: normal;
-  width: 300px;
-}
-
-.current-video {
-  margin: 10%;
-  height: 600px;
-  width: 80%;
-}
-
-.all-videos {
-  margin-top: 10%;
-}
-
-.toggle-favorite {
-  visibility: hidden;
-}
-
-.search ul {
-  color: white;
-}
-
 .search {
-  position: absolute;
-  margin-top: 5px;
-  top: 0%;
-  left: 40%;
-  display: inline;
+  visibility: hidden;
 }
 
-.search button {
-  color: white;
-  background-color: red;
-  font-size: 1.1em;
-}
+@media only screen and (min-width: 680px) {
+  .videos {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin: 2%;
+  }
 
-.search input {
-  font-size: 1.1em;
-}
+  .video-index-item {
+    margin: 0px -10px -10px 0px;
+    padding: 0px;
+  }
 
-.search label {
-  color: red;
-  font-size: 1.5em;
+  .video-index-item:hover {
+    transform: rotate(0deg) scale(1.6, 1.8) skew(0deg) translate(0px, 0px);
+    -webkit-animation: translate(20px, 0px) scale(1.6, 1.8);
+    .attributes {
+      visibility: visible;
+      position: fixed;
+      float: left;
+      top: 70%;
+      left: 0%;
+      margin: 10px;
+    }
+    .toggle-favorite {
+      visibility: visible;
+      position: fixed;
+      float: right;
+      top: 45%;
+      right: 2%;
+      padding: 0px;
+      margin: 0px;
+      background: transparent;
+      border: none;
+      font-size: 2.5em;
+    }
+  }
+
+  .attributes {
+    visibility: hidden;
+  }
+  .attributes p {
+    text-align: justify;
+    font-size: .8em;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    word-break: normal;
+    width: 300px;
+  }
+
+  .current-video {
+    margin: 10%;
+    height: 600px;
+    width: 80%;
+  }
+
+  .all-videos {
+    margin-top: 10%;
+  }
+
+  .toggle-favorite {
+    visibility: hidden;
+  }
+
+  .search ul {
+    color: white;
+  }
+
+  .search {
+    position: absolute;
+    margin-top: 5px;
+    top: 0%;
+    left: 40%;
+    display: inline;
+  }
+
+  .search button {
+    color: white;
+    background-color: red;
+    font-size: 1.1em;
+  }
+
+  .search input {
+    font-size: 1.1em;
+  }
+
+  .search label {
+    color: red;
+    font-size: 1.5em;
+  }
 }
