@@ -84,6 +84,30 @@ The following code snippet loads the video from YouTube.
 ...
 ```
 
+The following code snippet allows for dynamic search by year. Usually search by year will not search by key stroke; however, the following will overcome this challenge.
+
+```ruby
+  def search_by_year
+    year = params[:query][:year].to_i
+
+    if year < 10
+      year = year * 1000
+      next_year = year + 1000
+      @videos = Video.where("year >= ? and year < ?", year, next_year)
+    elsif year < 100
+      year = year * 100
+      next_year = year + 100
+      @videos = Video.where("year >= ? and year < ?", year, next_year)
+    elsif year < 1000
+      year = year * 10
+      next_year = year + 10
+      @videos = Video.where("year >= ? and year < ?", year, next_year)
+    else
+      @videos = Video.where("year = ?", year)
+    end
+...
+```
+
 ## Future Implementations
 
 DanceFlix could be improved with the addition of a few future implementations.
