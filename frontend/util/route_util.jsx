@@ -28,6 +28,23 @@ const Protected = ({component: Component, path, loggedIn}) => (
     )} />
 );
 
+
+const Search = ({component: Component, path, loggedIn}) => {
+    const page = window.location.hash.slice(2)
+    if (loggedIn && page === "videos") {
+      return (
+        <Route path={path} render={(props) => (
+          <Component {...props} />
+        )} />
+      )
+    } else {
+      return (
+        <div></div>
+      )
+    }
+};
+
+
 const Logo = ({component: path, loggedIn, value}) => (
   <Route path={path} render={() => (
       loggedIn? (
@@ -79,3 +96,5 @@ export const LogoRoute = withRouter(connect(mapStateToProps, null)(Logo));
 export const SplashRoute = withRouter(connect(mapStateToProps, null)(Splash));
 
 export const SplashVideoRoute = withRouter(connect(mapStateToProps, null)(SplashVideo));
+
+export const SearchRoute = withRouter(connect(mapStateToProps, null)(Search));

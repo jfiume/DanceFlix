@@ -6,7 +6,7 @@ import VideoShowContainer from './videos/video_show_container';
 import FavoriteIndexContainer from './favorites/favorite_index_container';
 import SearchContainer from './search/search_container';
 import ViewsIndexContainer from './views/views_index_container';
-import { AuthRoute, ProtectedRoute, LogoRoute, SplashRoute, SplashVideoRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute, LogoRoute, SplashRoute, SplashVideoRoute, SearchRoute } from '../util/route_util';
 import {
   Route,
   Redirect,
@@ -35,7 +35,7 @@ const App = () => (
     <header>
       <LogoRoute path="/videos" value="DANCEFLIX" />
       <ProtectedRoute path="/" component={GreetingContainer} />
-      <ProtectedRoute path="/" component={SearchContainer} />
+      <SearchRoute exact path="/videos" component={SearchContainer} />
       <SplashRoute exact path="/" />
     </header>
     <Switch>

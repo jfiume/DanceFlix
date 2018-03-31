@@ -39,6 +39,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'web-console', '>= 3.3.0'
   gem 'spring'
+  gem 'rspec_junit_formatter'
 end
 
 group :development do
