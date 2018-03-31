@@ -37,12 +37,15 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'pry-rails'
-  gem 'web-console', '>= 3.3.0'
   gem 'spring'
   gem 'rspec_junit_formatter'
+  gem 'rspec-rails'
+  gem 'rails-controller-testing'
+  gem 'shoulda-matchers'
 end
 
 group :development do
+  gem 'web-console', '>= 3.3.0'
   gem 'rails_12factor'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'listen', '~> 3.0.5'

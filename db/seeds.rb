@@ -8,8 +8,8 @@
 
 User.destroy_all
 demo_user = User.create!(username: "WillDavis@willdemos.net", password: "password")
-super_user = User.create(username: "Superman@batmansucks.org", password: "password")
-bat_user = User.create(username: "Batman@supermansucks.net", password: "password")
+# super_user = User.create(username: "Superman@batmansucks.org", password: "password")
+# bat_user = User.create(username: "Batman@supermansucks.net", password: "password")
 
 
 Video.destroy_all

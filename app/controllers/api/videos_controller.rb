@@ -24,13 +24,13 @@ class Api::VideosController < ApplicationController
 
   def search_by_genre
     genre = params[:query][:genre].downcase
-    @videos = Video.where("lower(genre) LIKE ?", "%#{genre}%")
+    @videos = Video.where("lower(genre) LIKE ?", "#{genre}%")
     render "api/videos/index"
   end
 
   def search_by_title
     title = params[:query][:title].downcase
-    @videos = Video.where("lower(title) LIKE ?", "%#{title}%")
+    @videos = Video.where("lower(title) LIKE ?", "#{title}%")
     render "api/videos/index"
   end
 
@@ -52,7 +52,7 @@ class Api::VideosController < ApplicationController
     else
       @videos = Video.where("year = ?", year)
     end
-    
+
     render "api/videos/index"
   end
 end
