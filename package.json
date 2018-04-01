@@ -28,7 +28,7 @@
     "webpack": "^3.8.1"
   },
   "devDependencies": {
-    "redux-logger": "^3.0.6",
+    "jest": "^22.4.3",
     "react-logger": "^1.1.0",
     "redux-logger": "^3.0.6"
   },
