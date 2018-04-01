@@ -36,16 +36,17 @@ gem 'bcrypt', '~> 3.1.7'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'pry-rails'
-  gem 'spring'
   gem 'rspec_junit_formatter'
   gem 'rspec-rails'
   gem 'rails-controller-testing'
   gem 'shoulda-matchers'
+  gem 'selenium-webdriver'
 end
 
 group :development do
+  gem 'pry-rails'
   gem 'web-console', '>= 3.3.0'
+  gem 'spring'
   gem 'rails_12factor'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'listen', '~> 3.0.5'
