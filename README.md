@@ -17,6 +17,8 @@ DanceFlix is a web application for users to stream dance videos. Inspired by Net
   - search is responsive, loading only the videos that match instantly
 - User can view their most viewed videos
   - Most Viewed page, with the videos sorted by view count
+- Backend Testing with RSpec
+  - RSpec tests improve Rails functionality and provide automated tests for Jenkins
 
 
 ## Project Design

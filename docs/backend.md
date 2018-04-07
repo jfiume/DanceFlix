@@ -4,7 +4,7 @@ DanceFlix runs on Ruby on Rails and is hosted on Heroku. The backend provides RE
 
 ## Heroku
 
-BinaryCanary application performance management (APM) pings the Heroku dyno, keeping it awake for faster user response.
+Uptime Robot application performance management (APM) pings the Heroku dyno, keeping it awake for faster user response.
 
 ## Database
 
