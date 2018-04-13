@@ -14,4 +14,13 @@ RSpec.describe Api::UsersController, type: :controller do
       expect(:erros).to be_present
     end
   end
+
+  context 'with valid params' do
+    it 'logs in the user' do
+      post :create, params: { user: { username: 'Batman@supermansucks.net', password: 'password'}}
+      user = User.find_by_username('Batman@supermansucks.net')
+
+      expect(session[:session_token]).to eq(user.session_token)
+    end
+  end
 end
