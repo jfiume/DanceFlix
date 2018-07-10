@@ -38,7 +38,7 @@ DanceFlix is a single-page web application built on a Rails backend and a React 
 [File Storage](https://github.com/jfiume/DanceFlix/blob/master/docs/file_storage.md)
 
 ## Code snippets
-The following code snippet provides for me to set a different id for each page which allows for a different background image on each page of a single-page web app.
+The following code snippet provides for me to set a different id for each page, which allows for a different background image on each page of a single-page web app.
 
 ```javascript
     const currentPage = () => {
@@ -90,7 +90,9 @@ The following code snippet allows for dynamic search by year. Usually search by 
   def search_by_year
     year = params[:query][:year].to_i
 
-    if year < 10
+    if year == 0
+      @videos = Video.all
+    elsif year < 10
       year = year * 1000
       next_year = year + 1000
       @videos = Video.where("year >= ? and year < ?", year, next_year)
