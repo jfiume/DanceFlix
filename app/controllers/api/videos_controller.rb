@@ -37,7 +37,9 @@ class Api::VideosController < ApplicationController
   def search_by_year
     year = params[:query][:year].to_i
 
-    if year < 10
+    if year == 0
+      @videos = Video.all
+    elsif year < 10
       year = year * 1000
       next_year = year + 1000
       @videos = Video.where("year >= ? and year < ?", year, next_year)
