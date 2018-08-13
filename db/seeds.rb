@@ -50,7 +50,7 @@ year: 2013
 )
 
 video5 = Video.create(
-video_url: "https://www.youtube.com/embed/SKDnPGD8CIw?rel=0&amp;showinfo=0",
+video_url: "https://www.youtube.com/embed/waTDxRZ93Qc?rel=0&amp;showinfo=0",
 image_url: "https://res.cloudinary.com/pancake/image/upload/c_scale,h_160,w_280/v1504227165/la-la-land_y5foik.png",
 description: "Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire to do what they love. But as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.",
 title: "La La Land - A Lovely Night",
@@ -106,7 +106,7 @@ year: 1977
 )
 
 video11 = Video.create(
-  video_url: "https://www.youtube.com/embed/76DQOIWu06k?rel=0&amp;showinfo=0",
+  video_url: "https://www.youtube.com/embed/YN1QrKBoAf0?rel=0&amp;showinfo=0",
   image_url: "https://res.cloudinary.com/pancake/image/upload/c_scale,h_160,w_280/v1508447022/Another_Day_In_the_Sun.png",
   description: "Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire to do what they love. But as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.",
   title: "La La Land - Another Day of Sun",
