@@ -35,7 +35,8 @@ class Api::VideosController < ApplicationController
   end
 
   def search_by_year
-    year = params[:query][:year].to_i
+    user_input = params[:query][:year]
+    year = user_input.to_i
     count = user_input.size
 
     if user_input == ""
